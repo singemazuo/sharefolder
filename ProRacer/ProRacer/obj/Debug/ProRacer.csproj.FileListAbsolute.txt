@@ -1,0 +1,15 @@
+c:\users\5028212\source\repos\ProRacer\ProRacer\bin\Debug\ProRacer.exe.config
+c:\users\5028212\source\repos\ProRacer\ProRacer\bin\Debug\ProRacer.exe
+c:\users\5028212\source\repos\ProRacer\ProRacer\bin\Debug\ProRacer.pdb
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.csprojResolveAssemblyReference.cache
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.Properties.Resources.resources
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.csproj.GenerateResource.Cache
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.csproj.CoreCompileInputs.cache
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.exe
+c:\users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.pdb
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.MainForm.resources
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.SplashForm.resources
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.LoginForm.resources
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.Participant.resources
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.Race.resources
+C:\Users\5028212\source\repos\ProRacer\ProRacer\obj\Debug\ProRacer.Sponsor.resources
