@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{2C9BD9DB-A8D0-4DFE-A6CA-1E0CD2576E65}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProRacer/Participant.cs">
+    <Files>
+      <File FileName="ProRacer/Participant.cs" Line="35" Column="68" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -32,7 +32,7 @@ namespace ProRacer
             this.conn.Open();
             this.cmmd.CommandText = "SELECT * FROM Participant";
 
-            lstSearch.DataBindings.Add("DataSource",this.daAuthen);
+            lstSearch.DataBindings.Add("DataSource",this.daAuthen,"*");
             //SqlDataReader dr = this.cmmd.ExecuteReader();
             //if (dr.Read())
             //{
