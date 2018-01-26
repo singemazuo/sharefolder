@@ -27,7 +27,7 @@ namespace ProRacer.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=P" +
             "roRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;")]
-        public string Setting {
+        public string SqlConnectionString {
             get {
                 return ((string)(this["Setting"]));
             }
