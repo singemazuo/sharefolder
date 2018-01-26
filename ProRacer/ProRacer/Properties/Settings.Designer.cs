@@ -29,10 +29,22 @@ namespace ProRacer.Properties {
             "roRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;")]
         public string SqlConnectionString {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["SqlConnectionString"]));
             }
             set {
-                this["Setting"] = value;
+                this["SqlConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM Race")]
+        public string SqlRaceSelectCommand {
+            get {
+                return ((string)(this["SqlRaceSelectCommand"]));
+            }
+            set {
+                this["SqlRaceSelectCommand"] = value;
             }
         }
     }
