@@ -20,7 +20,7 @@ namespace ProRacer
 
         public void Race_Load(Object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;");
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.SqlConnectionString);
             SqlCommand command = new SqlCommand("SELECT * FROM Race",conn);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
