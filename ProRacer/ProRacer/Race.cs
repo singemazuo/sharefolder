@@ -36,7 +36,7 @@ namespace ProRacer
                     cmbSearch.DisplayMember = "LocalRace.Name";
                 }
 
-                //dtpRaceDate.DataBindings.Add("Text",ds,"RaceDate");
+                dtpRaceDate.DataBindings.Add("Text",ds,"RaceDate");
 
             }
             catch(SqlException ex)
