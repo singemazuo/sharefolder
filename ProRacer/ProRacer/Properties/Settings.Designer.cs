@@ -29,10 +29,10 @@ namespace ProRacer.Properties {
             "roRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;")]
         public string SqlRemoteConnectionString {
             get {
-                return ((string)(this["SqlConnectionString"]));
+                return ((string)(this["SqlRemoteConnectionString"]));
             }
             set {
-                this["SqlConnectionString"] = value;
+                this["SqlRemoteConnectionString"] = value;
             }
         }
         
@@ -45,6 +45,18 @@ namespace ProRacer.Properties {
             }
             set {
                 this["SqlRaceSelectCommand"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=ProRacer;Integrated Security=SSPI")]
+        public string SqlLocalConnectionString {
+            get {
+                return ((string)(this["SqlLocalConnectionString"]));
+            }
+            set {
+                this["SqlLocalConnectionString"] = value;
             }
         }
     }

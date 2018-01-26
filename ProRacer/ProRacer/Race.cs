@@ -20,7 +20,7 @@ namespace ProRacer
 
         public void Race_Load(Object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.SqlConnectionString);
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.SqlRemoteConnectionString);
             SqlCommand command = new SqlCommand(Properties.Settings.Default.SqlRaceSelectCommand,conn);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
