@@ -27,9 +27,6 @@ namespace ProRacer
             this.conn = new SqlConnection("server=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
             this.cmmd = new SqlCommand();
             this.daAuthen = new SqlDataAdapter();
-            this.cmmd.Connection = conn;
-            this.daAuthen.SelectCommand = this.cmmd;
-            this.conn.Open();
             this.cmmd.CommandText = "SELECT * FROM Participant";
 
             lstSearch.DataBindings.Add("DataSource",this.daAuthen,"*");
