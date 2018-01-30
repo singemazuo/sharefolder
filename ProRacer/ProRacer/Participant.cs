@@ -30,11 +30,7 @@ namespace ProRacer
             DataSet ds = new DataSet();
             this.daAuthen.Fill(ds);
 
-            SqlDataReader dr = this.cmmd.ExecuteReader();
-            //if (dr.Read())
-            //{
-            //    dr.Close();
-            //}
+
         }
     }
 }
