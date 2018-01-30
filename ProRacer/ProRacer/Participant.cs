@@ -26,8 +26,6 @@ namespace ProRacer
             SqlDataAdapter da = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
-
-            //Console.WriteLine(ds);
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
