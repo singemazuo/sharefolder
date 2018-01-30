@@ -13,9 +13,6 @@ namespace ProRacer
 {
     public partial class Participant : Form
     {
-        private SqlConnection conn;
-        private SqlDataAdapter daAuthen;
-        private SqlCommand cmmd;
 
         public Participant()
         {
