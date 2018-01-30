@@ -28,7 +28,7 @@ namespace ProRacer
             this.cmmd = new SqlCommand("SELECT * FROM Participant",this.conn);
             this.daAuthen = new SqlDataAdapter(this.cmmd);
             DataSet ds = new DataSet();
-            this.daAuthen.Fill();
+            this.daAuthen.Fill(ds);
 
             lstSearch.DataBindings.Add("DataSource",this.daAuthen,"*");
             //SqlDataReader dr = this.cmmd.ExecuteReader();
