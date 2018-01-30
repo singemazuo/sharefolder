@@ -25,7 +25,7 @@ namespace ProRacer
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant WHERE Country = "+txtCountry.Text,conn);
             SqlDataAdapter da = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
-            this.daAuthen.Fill(ds);
+            da.Fill(ds);
 
             //Console.WriteLine(ds);
         }
