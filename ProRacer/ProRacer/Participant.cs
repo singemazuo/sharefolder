@@ -23,7 +23,7 @@ namespace ProRacer
         {
             SqlConnection conn = new SqlConnection("server=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant WHERE Country = "+txtCountry.Text,conn);
-            this.daAuthen = new SqlDataAdapter(this.cmmd);
+            SqlDataAdapter = new SqlDataAdapter(this.cmmd);
             DataSet ds = new DataSet();
             this.daAuthen.Fill(ds);
 
