@@ -30,7 +30,7 @@ namespace ProRacer
             DataSet ds = new DataSet();
             this.daAuthen.Fill(ds);
 
-
+            Console.WriteLine(ds);
         }
     }
 }
