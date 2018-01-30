@@ -43,7 +43,7 @@ namespace ProRacer
 
         }
 
-        private void BtnAdd_Click(object sender, EventArgs e)
+        private void BtnDelete_Click(object sender, EventArgs e)
         {
 
         }
