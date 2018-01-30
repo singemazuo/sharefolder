@@ -30,7 +30,6 @@ namespace ProRacer
             DataSet ds = new DataSet();
             this.daAuthen.Fill(ds);
 
-            lstSearch.DataBindings.Add("DataSource",this.daAuthen,"*");
             //SqlDataReader dr = this.cmmd.ExecuteReader();
             //if (dr.Read())
             //{
