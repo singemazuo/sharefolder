@@ -21,7 +21,7 @@ namespace ProRacer
 
         private void Participant_Load(object sender, EventArgs e)
         {
-            //SqlConnection conn = new SqlConnection("server=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
+            //SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
             //SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant WHERE Country = "+txtCountry.Text,conn);
             //SqlDataAdapter da = new SqlDataAdapter(cmmd);
             //DataSet ds = new DataSet();
