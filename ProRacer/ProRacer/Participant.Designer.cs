@@ -96,7 +96,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += System.EventHandler(BtnAdd_Click);
+            this.btnAdd.Click += EventHandler(BtnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -111,7 +111,7 @@
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += System.even(BtnUpdate_Click);
+            this.btnUpdate.Click += System.EventHandler(BtnUpdate_Click);
 
             // 
             // btnCancel
