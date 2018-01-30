@@ -24,7 +24,7 @@ namespace ProRacer
 
         private void Participant_Load(object sender, EventArgs e)
         {
-            this.conn = new SqlConnection("server=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
+            this.conn = new SqlConnection("server=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;Network Library=DBMSSOCN;integrated security=false;User ID=singemazuo;Password=z28397562");
             this.cmmd = new SqlCommand();
             this.daAuthen = new SqlDataAdapter();
             this.cmmd.Connection = conn;
