@@ -111,7 +111,7 @@
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += System.EventHandler(BtnUpdate_Click);
+            this.btnUpdate.Click += new System.EventHandler(BtnUpdate_Click);
 
             // 
             // btnCancel
@@ -144,7 +144,7 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += System.EventHandler(BtnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(BtnDelete_Click);
 
             // 
             // GroupBox1
