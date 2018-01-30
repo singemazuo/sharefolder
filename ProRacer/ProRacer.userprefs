@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{2C9BD9DB-A8D0-4DFE-A6CA-1E0CD2576E65}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProRacer/Participant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProRacer/Participant.Designer.cs">
     <Files>
       <File FileName="ProRacer/Participant.cs" Line="21" Column="10" />
       <File FileName="ProRacer/SplashForm.cs" Line="9" Column="28" />
