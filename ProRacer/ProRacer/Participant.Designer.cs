@@ -144,6 +144,8 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += System.EventHandler(BtnUpdate_Click);
+
             // 
             // GroupBox1
             // 
