@@ -111,7 +111,7 @@
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += System.EventHandler(BtnAdd_Click);
+            this.btnUpdate.Click += System.EventHandler(BtnUpdate_Click);
 
             // 
             // btnCancel
