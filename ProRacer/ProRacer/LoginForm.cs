@@ -13,7 +13,6 @@ namespace ProRacer
 {
     public partial class LoginForm : Form
     {
-        private SqlConnection conn;
         private SqlDataAdapter daAuthen;
         private SqlCommand cmmd;
 
@@ -31,8 +30,6 @@ namespace ProRacer
         {
             try
             {
-
-                this.conn.Open();
                 this.cmmd.CommandText = "SELECT * FROM Authenticate WHERE Userid = '" + TxtUserName.Text + "' AND Password = '" + TxtPassword.Text + "'";
                 SqlDataReader dr = this.cmmd.ExecuteReader();
                 if (dr.Read())
@@ -56,19 +53,14 @@ namespace ProRacer
             {
 
             }
-            finally
-            {
-                this.conn.Close();
-            }
             
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
-            this.cmmd = new SqlCommand();
+            SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
+            this.cmmd = new SqlCommand("",conn);
             this.daAuthen = new SqlDataAdapter();
-            this.cmmd.Connection = conn;
             this.daAuthen.SelectCommand = this.cmmd;
         }
     }

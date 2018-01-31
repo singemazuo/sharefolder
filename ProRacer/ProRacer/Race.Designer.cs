@@ -454,6 +454,7 @@
             this.Frame3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.Load += new System.EventHandler(Race_Load);
 
         }
 

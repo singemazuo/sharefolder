@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProRacer
 {
@@ -15,6 +16,34 @@ namespace ProRacer
         public Race()
         {
             InitializeComponent();
+        }
+
+        public void Race_Load(Object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;");
+            SqlCommand command = new SqlCommand("SELECT * FROM Race",conn);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            DataSet ds = new DataSet();
+
+            try
+            {
+                adapter.Fill(ds,"LocalRace");
+
+                if(ds.Tables.Count > 0)
+                {
+                    cmbSearch.DataSource = ds;
+                    cmbSearch.DisplayMember = "LocalRace.Name";
+                }
+
+                //dtpRaceDate.DataBindings.Add("Text",ds,"RaceDate");
+
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
     }
 }
