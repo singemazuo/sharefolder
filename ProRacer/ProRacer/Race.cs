@@ -20,8 +20,8 @@ namespace ProRacer
 
         public void Race_Load(Object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.SqlLocalConnectionString);
-            SqlCommand command = new SqlCommand(Properties.Settings.Default.SqlRaceSelectCommand,conn);
+            SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;");
+            SqlCommand command = new SqlCommand("SELECT * FROM Race",conn);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = command;
             DataSet ds = new DataSet();
@@ -36,7 +36,7 @@ namespace ProRacer
                     cmbSearch.DisplayMember = "LocalRace.Name";
                 }
 
-                dtpRaceDate.DataBindings.Add("Text",ds, "LocalRace.RaceDate");
+                //dtpRaceDate.DataBindings.Add("Text",ds,"RaceDate");
 
             }
             catch(SqlException ex)

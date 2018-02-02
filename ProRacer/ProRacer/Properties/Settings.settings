@@ -1,15 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProRacer.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="SqlRemoteConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;</Value>
-    </Setting>
-    <Setting Name="SqlRaceSelectCommand" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT * FROM Race</Value>
-    </Setting>
-    <Setting Name="SqlLocalConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=(local);Initial Catalog=ProRacer;Integrated Security=SSPI</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

@@ -22,42 +22,5 @@ namespace ProRacer.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=P" +
-            "roRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;")]
-        public string SqlRemoteConnectionString {
-            get {
-                return ((string)(this["SqlRemoteConnectionString"]));
-            }
-            set {
-                this["SqlRemoteConnectionString"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM Race")]
-        public string SqlRaceSelectCommand {
-            get {
-                return ((string)(this["SqlRaceSelectCommand"]));
-            }
-            set {
-                this["SqlRaceSelectCommand"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=ProRacer;Integrated Security=SSPI")]
-        public string SqlLocalConnectionString {
-            get {
-                return ((string)(this["SqlLocalConnectionString"]));
-            }
-            set {
-                this["SqlLocalConnectionString"] = value;
-            }
-        }
     }
 }
