@@ -15,7 +15,7 @@ namespace ProRacer
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
 
-        private IDictionary<String, SqlDataAdapter> dictionary = new IDictionary<string, SqlDataAdapter>();
+        private Dictionary<String, SqlDataAdapter> dictionary = new IDictionary<string, SqlDataAdapter>();
 
         private PRDatabaseManager(string url)
         {
