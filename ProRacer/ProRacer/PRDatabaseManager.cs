@@ -36,7 +36,7 @@ namespace ProRacer
 
             cmmd = new SqlCommand("SELECT * FROM Race",conn);
             dapater = new SqlDataAdapter(cmmd);
-            race = DataSet();
+            race = new DataSet();
 
         }
 
