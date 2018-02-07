@@ -27,6 +27,7 @@ namespace ProRacer
         {
             DataSet ds = PRDatabaseManager.Instance().participant;
             lstParticipants.DataSource = ds;
+            lstParticipants.DisplayMember = "";
         }
     }
 }
