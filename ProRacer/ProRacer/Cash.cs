@@ -14,14 +14,18 @@ namespace ProRacer
 
         private void Cash_Load(object sender,EventArgs e)
         {
-            lstRace.DataSource = PRDatabaseManager.Instance().race;
+            DataSet ds = PRDatabaseManager.Instance().race;
+            lstRace.DataSource = ds;
             lstRace.DisplayMember = "Race.Name";
             lstRace.ValueMember = "Race.RaceId";
+            lstRace.DataBindings.Add("SelectedValue", ds, "Result.RaceId");
+
+
         }
 
-        private void lstRace_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstRace_SelectedValueChanged(object sender, EventArgs e)
         {
-            Console.Write("");
+
         }
     }
 }

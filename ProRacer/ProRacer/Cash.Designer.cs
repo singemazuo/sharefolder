@@ -44,7 +44,7 @@
             this.lstRace.Name = "lstRace";
             this.lstRace.Size = new System.Drawing.Size(126, 95);
             this.lstRace.TabIndex = 0;
-            this.lstRace.SelectedIndexChanged += new System.EventHandler(this.lstRace_SelectedIndexChanged);
+            this.lstRace.SelectedValueChanged += new System.EventHandler(this.lstRace_SelectedValueChanged);
             // 
             // lstParticipants
             // 
