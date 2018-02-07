@@ -45,7 +45,13 @@ namespace ProRacer
         }
 
         public DataSet sponsor {
+            get
+            {
+                if (_sponsor)
+                {
 
+                }
+            }
         }
         public DataSet result { get; set; }
 
