@@ -25,6 +25,7 @@ namespace ProRacer
             lstSearch.DataSource = ds;
             lstSearch.DisplayMember = "Participant.FullName";
             lstSearch.ValueMember = "Participant.ParticipantId";
+            lstSearch.DataBindings.Add("SelectedValue");
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
