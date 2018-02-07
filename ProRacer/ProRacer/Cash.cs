@@ -24,7 +24,6 @@ namespace ProRacer
 
             lstParticipants.DataSource = dsPar;
             lstParticipants.DisplayMember = "Participant.FullName";
-            lstParticipants.ValueMember = "Participant.SponsorId";
         }
     }
 }
