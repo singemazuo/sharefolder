@@ -18,6 +18,8 @@ namespace ProRacer
 
         private void frmRacers_Load(object sender, EventArgs e)
         {
+            ds = PRDatabaseManager.Instance().participant;
+
 
         }
     }
