@@ -21,19 +21,12 @@ namespace ProRacer
         private void timer1_Tick(object sender, EventArgs e)
         {
             ((Timer)sender).Stop();
-            LoginForm form2 = new LoginForm();
-            DialogResult result = form2.ShowDialog();
-            Console.WriteLine();
+            Close();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Splash_Load(object sender, EventArgs e)
         {
-            //SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
-            //SqlCommand cmd = new SqlCommand("SELECT * FROM Authenticate",conn);
-            //SqlDataAdapter daAuthen = new SqlDataAdapter(cmd);
-            //DataTable table = new DataTable();
-            //daAuthen.Fill(table);
-            //MessageBox.Show(table.Rows.Count+"");
+            
         }
     }
 }

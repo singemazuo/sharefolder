@@ -28,21 +28,6 @@ C:/Users/5028212/source/repos/ProRacer/ProRacer/obj/Debug/ProRacer.Sponsor.resou
 /Users/singemazuo/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.csproj.CoreCompileInputs.cache
 /Users/singemazuo/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.exe
 /Users/singemazuo/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.pdb
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/bin/Debug/ProRacer.exe.config
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/bin/Debug/ProRacer.exe
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/bin/Debug/ProRacer.pdb
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.csprojResolveAssemblyReference.cache
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.MainForm.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.Participant.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.Race.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.SplashForm.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.LoginForm.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.Properties.Resources.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.Sponsor.resources
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.csproj.GenerateResource.Cache
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.csproj.CoreCompileInputs.cache
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.exe
-C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.pdb
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/bin/Debug/ProRacer.exe.config
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/bin/Debug/ProRacer.exe
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/bin/Debug/ProRacer.pdb
@@ -58,3 +43,19 @@ C:/Users/5028212/SparkleShare/sharefolder/ProRacer/ProRacer/obj/Debug/ProRacer.p
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/obj/Debug/ProRacer.csproj.CoreCompileInputs.cache
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/obj/Debug/ProRacer.exe
 /Users/singemazuo/project/individual/semester2/Database Programming/ProRacer/ProRacer/obj/Debug/ProRacer.pdb
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.exe.config
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.exe
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.pdb
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\MdiTabControl.dll
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\WindowsFormsApp18.Cash.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.MainForm.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Participant.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Race.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.SplashForm.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.LoginForm.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Properties.Resources.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Sponsor.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.csproj.GenerateResource.Cache
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.csproj.CoreCompileInputs.cache
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.exe
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.pdb

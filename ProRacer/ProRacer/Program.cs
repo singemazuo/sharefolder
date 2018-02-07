@@ -16,7 +16,7 @@ namespace ProRacer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Race());
+            Application.Run(new MainForm());
         }
     }
 }
