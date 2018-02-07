@@ -17,7 +17,8 @@ namespace ProRacer
         private DataSet _participant,_race,_sponsor,_result;
 
         public DataSet participant {
-            get {
+            get
+            {
                 if (_participant == null)
                 {
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
@@ -29,7 +30,12 @@ namespace ProRacer
             }
         }
 
-        public DataSet race { get; set; }
+        public DataSet race {
+            get
+            {
+
+            }
+        }
         public DataSet sponsor { get; set; }
         public DataSet result { get; set; }
 
