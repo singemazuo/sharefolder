@@ -20,10 +20,9 @@ namespace ProRacer
             get {
                 if (_participant == null)
                 {
-                    SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562");
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
-                    participant = new DataSet();
+                    _participant = new DataSet();
                     dapater.Fill(participant, "Participant");
                 }
             }
