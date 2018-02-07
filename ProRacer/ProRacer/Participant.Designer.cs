@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp18
+﻿namespace ProRacer
 {
     partial class Participant
     {

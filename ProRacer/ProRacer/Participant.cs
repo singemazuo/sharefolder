@@ -16,6 +16,9 @@ namespace ProRacer
             InitializeComponent();
         }
 
+        private void frmRacers_Load()
+        {
 
+        }
     }
 }
