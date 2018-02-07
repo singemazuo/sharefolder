@@ -41,7 +41,7 @@ namespace ProRacer
 
         private void reportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl.TabPages.Add(new Race());
+            tabControl.TabPages.Add(new Report());
         }
     }
 }
