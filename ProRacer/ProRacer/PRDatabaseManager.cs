@@ -98,7 +98,7 @@ namespace ProRacer
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
             if(name != null)
-            adapter.Fill(ds);
+                adapter.Fill(ds,name);
         }
     }
 }
