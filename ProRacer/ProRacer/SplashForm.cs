@@ -26,16 +26,6 @@ namespace ProRacer
             Console.WriteLine();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
-            //SqlCommand cmd = new SqlCommand("SELECT * FROM Authenticate",conn);
-            //SqlDataAdapter daAuthen = new SqlDataAdapter(cmd);
-            //DataTable table = new DataTable();
-            //daAuthen.Fill(table);
-            //MessageBox.Show(table.Rows.Count+"");
-        }
-
         private void Splash_Load(object sender, EventArgs e)
         {
 
