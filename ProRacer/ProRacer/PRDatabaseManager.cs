@@ -92,7 +92,7 @@ namespace ProRacer
             return _instance;
         }
 
-        public DataSet SponsorWithParticipant(string name)
+        public DataSet SponsorWithParticipant(string name = null)
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
