@@ -37,8 +37,8 @@ namespace ProRacer
                 {
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Race", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
-                    race = new DataSet();
-                    dapater.Fill(race, "Race");
+                    _race = new DataSet();
+                    dapater.Fill(_race, "Race");
                 }
             }
         }
