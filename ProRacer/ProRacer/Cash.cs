@@ -16,7 +16,7 @@ namespace ProRacer
         {
             lstRace.DataSource = PRDatabaseManager.Instance().race;
             lstRace.DisplayMember = "Race.Name";
-            lstRace.ValueMember = "";
+            lstRace.ValueMember = "Race.";
         }
 
     }
