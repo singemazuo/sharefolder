@@ -23,11 +23,6 @@ namespace ProRacer
 
         }
 
-        private void lstRace_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Console.Write("");
-        }
-
         private void lstRace_SelectedValueChanged(object sender, EventArgs e)
         {
 
