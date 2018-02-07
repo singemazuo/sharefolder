@@ -21,7 +21,7 @@ namespace ProRacer
 
         private void Participant_Load(object sender, EventArgs e)
         {
-            
+            lstSearch.DataSource = ;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
