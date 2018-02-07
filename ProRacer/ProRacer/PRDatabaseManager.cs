@@ -57,7 +57,15 @@ namespace ProRacer
                 return _sponsor;
             }
         }
-        public DataSet result { get; set; }
+        public DataSet result {
+            get
+            {
+                if ()
+                {
+
+                }
+            }
+        }
 
         private PRDatabaseManager()
         {
