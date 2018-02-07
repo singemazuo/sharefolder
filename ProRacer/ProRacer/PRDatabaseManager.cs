@@ -17,7 +17,7 @@ namespace ProRacer
 
         public DataSet participant {
             get {
-                if ()
+                if (_participant == null)
                 {
 
                 }
