@@ -20,7 +20,7 @@ namespace ProRacer
         {
             ds = PRDatabaseManager.Instance().participant;
 
-
+            cmbParticipants.DataSource = ds;
         }
     }
 }
