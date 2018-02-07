@@ -22,10 +22,5 @@ namespace ProRacer
             SplashForm splash = new SplashForm();
             splash.Show();
         }
-
-        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
