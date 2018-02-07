@@ -60,9 +60,12 @@ namespace ProRacer
         public DataSet result {
             get
             {
-                if ()
+                if (_result == null)
                 {
-
+                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor", conn);
+                    SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
+                    _sponsor = new DataSet();
+                    dapater.Fill(_sponsor, "Sponsor");
                 }
             }
         }
