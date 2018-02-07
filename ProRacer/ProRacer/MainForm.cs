@@ -36,12 +36,12 @@ namespace ProRacer
 
         private void raceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl.TabPages.Add(new Race());
         }
 
         private void reportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl.TabPages.Add(new Race());
         }
     }
 }
