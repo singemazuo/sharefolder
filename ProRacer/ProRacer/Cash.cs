@@ -16,7 +16,7 @@ namespace ProRacer
         {
             DataSet dsSpo = PRDatabaseManager.Instance().sponsor;
             DataSet dsPar = PRDatabaseManager.Instance().participant;
-            PRDatabaseManager.Instance().SponsorWithParticipant("Cash");
+            DataSet ds = PRDatabaseManager.Instance().SponsorWithParticipant("Cash");
 
             lstRace.DataSource = dsSpo;
             lstRace.DisplayMember = "Sponsor.SponsorName";
