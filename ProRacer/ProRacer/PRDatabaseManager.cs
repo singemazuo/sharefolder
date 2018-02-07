@@ -17,8 +17,6 @@ namespace ProRacer
 
         public DataSet participant { get; set; }
 
-        private Dictionary<string, DataSet> dictionary = new Dictionary<string, DataSet>();
-
         private PRDatabaseManager(string url)
         {
             //this.conn = new SqlConnection(url);
