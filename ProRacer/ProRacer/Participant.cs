@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp18
+namespace ProRacer
 {
     public partial class Participant : Form
     {

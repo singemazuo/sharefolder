@@ -1,4 +1,4 @@
-﻿namespace ProRacer
+﻿namespace WindowsFormsApp18
 {
     partial class Participant
     {
@@ -351,7 +351,7 @@
             this.txtGender.Size = new System.Drawing.Size(36, 22);
             this.txtGender.TabIndex = 37;
             // 
-           
+
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rdoOther);
