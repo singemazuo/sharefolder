@@ -31,8 +31,8 @@ namespace ProRacer
             SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562");
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
             SqlDataAdapter da = new SqlDataAdapter(cmmd);
-            Participant = new DataSet();
-            da.Fill(Participant, "Participant");
+            participant = new DataSet();
+            da.Fill(participant, "Participant");
             
         }
 
