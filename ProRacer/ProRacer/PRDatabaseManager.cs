@@ -62,7 +62,7 @@ namespace ProRacer
             {
                 if (_result == null)
                 {
-                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Result", conn);
+                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
                     _result = new DataSet();
                     dapater.Fill(_result, "Result");
