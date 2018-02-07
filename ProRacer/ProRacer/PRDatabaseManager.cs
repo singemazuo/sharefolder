@@ -20,7 +20,7 @@ namespace ProRacer
         public DataSet sponsor { get; set; }
         public DataSet result { get; set; }
 
-        private PRDatabaseManager(string url)
+        private PRDatabaseManager()
         {
             //this.conn = new SqlConnection(url);
             //SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
@@ -54,7 +54,7 @@ namespace ProRacer
         {
             if(_instance == null)
             {
-                _instance = new PRDatabaseManager(url);
+                _instance = new PRDatabaseManager();
             }
             return _instance;
         }
