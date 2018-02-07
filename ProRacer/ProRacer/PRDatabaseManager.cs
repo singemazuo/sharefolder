@@ -19,7 +19,7 @@ namespace ProRacer
         public DataSet participant {
             get
             {
-                if (_participant == null)
+                if (value == null)
                 {
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
