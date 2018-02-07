@@ -16,7 +16,9 @@ namespace ProRacer
         private SqlConnection conn;
 
         private DataSet participant {
-
+            get {
+                
+            };
         };
 
         private Dictionary<string, DataSet> dictionary = new Dictionary<string, DataSet>();
