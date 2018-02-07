@@ -15,6 +15,7 @@ namespace ProRacer
         private void Cash_Load(object sender,EventArgs e)
         {
             lstRace.DataSource = PRDatabaseManager.Instance().race;
+            lstRace.DisplayMember = 
         }
 
     }
