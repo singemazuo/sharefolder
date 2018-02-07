@@ -18,7 +18,7 @@ namespace ProRacer
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Race.Name";
             lstRace.ValueMember = "Race.RaceId";
-            lstRace.DataBindings.Add("SelectedValue",);
+            lstRace.DataBindings.Add("SelectedValue", ds, "Result.");
         }
 
         private void lstRace_SelectedIndexChanged(object sender, EventArgs e)
