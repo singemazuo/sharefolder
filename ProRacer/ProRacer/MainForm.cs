@@ -20,7 +20,7 @@ namespace ProRacer
         private void MainForm_Load(object sender, EventArgs e)
         {
             SplashForm splash = new SplashForm();
-            splash.Show();
+            splash.ShowDialog();
         }
 
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
