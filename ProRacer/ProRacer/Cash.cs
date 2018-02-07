@@ -23,6 +23,7 @@ namespace ProRacer
             lstRace.DataBindings.Add("SelectedValue", dsPar, "Participant.SponsorId");
 
             lstRace.DataSource = dsPar;
+            lstRace.DisplayMember = "";
         }
 
         private void lstRace_SelectedValueChanged(object sender, EventArgs e)
