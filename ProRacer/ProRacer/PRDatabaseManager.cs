@@ -13,6 +13,7 @@ namespace ProRacer
     public class PRDatabaseManager
     {
         private static PRDatabaseManager _instance = null;
+        private DataSet _participant;
 
         public DataSet participant { get; set; }
         public DataSet race { get; set; }
