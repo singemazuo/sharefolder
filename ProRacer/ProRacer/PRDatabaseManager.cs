@@ -15,10 +15,10 @@ namespace ProRacer
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
 
-        public DataSet Participant { get; set; }
-        public DataSet Race { get; set; }
-        public DataSet Sponsor { get; set; }
-        public DataSet Result { get; set; }
+        public DataSet participant { get; set; }
+        public DataSet race { get; set; }
+        public DataSet sponsor { get; set; }
+        public DataSet result { get; set; }
 
         private PRDatabaseManager(string url)
         {
