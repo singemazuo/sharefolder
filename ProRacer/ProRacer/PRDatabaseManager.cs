@@ -17,6 +17,7 @@ namespace ProRacer
 
         public DataSet Participant { get; set; }
         public DataSet Race { get; set; }
+        public DataSet Sponsor { get; set; }
 
         private PRDatabaseManager(string url)
         {
