@@ -97,6 +97,7 @@ namespace ProRacer
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
+            if(name != null)
             adapter.Fill(ds);
         }
     }
