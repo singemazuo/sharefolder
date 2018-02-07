@@ -29,13 +29,6 @@ namespace ProRacer
             {
                 _instance = new PRDatabaseManager(url);
             }
-            else
-            {
-                if(!_instance.conn.ConnectionString.Equals(url))
-                {
-                    _instance = new PRDatabaseManager(url);
-                }
-            }
             return _instance;
         }
     }
