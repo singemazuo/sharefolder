@@ -39,6 +39,9 @@
             this.tabControl1 = new MdiTabControl.TabControl();
             this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sponsorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -122,7 +125,10 @@
             // functionsToolStripMenuItem
             // 
             this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem});
+            this.reportToolStripMenuItem,
+            this.raceToolStripMenuItem,
+            this.sponsorToolStripMenuItem,
+            this.cashToolStripMenuItem});
             this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
             this.functionsToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.functionsToolStripMenuItem.Text = "F&unctions";
@@ -131,7 +137,27 @@
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.reportToolStripMenuItem.Text = "&Report";
+            this.reportToolStripMenuItem.Text = "&Participant";
+            // 
+            // raceToolStripMenuItem
+            // 
+            this.raceToolStripMenuItem.Name = "raceToolStripMenuItem";
+            this.raceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.raceToolStripMenuItem.Text = "&Race";
+            // 
+            // sponsorToolStripMenuItem
+            // 
+            this.sponsorToolStripMenuItem.Name = "sponsorToolStripMenuItem";
+            this.sponsorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sponsorToolStripMenuItem.Text = "&Sponsor";
+            this.sponsorToolStripMenuItem.Click += new System.EventHandler(this.sponsorToolStripMenuItem_Click);
+            // 
+            // cashToolStripMenuItem
+            // 
+            this.cashToolStripMenuItem.Name = "cashToolStripMenuItem";
+            this.cashToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cashToolStripMenuItem.Text = "&Cash";
+            this.cashToolStripMenuItem.Click += new System.EventHandler(this.cashToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -170,5 +196,8 @@
         private System.Windows.Forms.ToolStripMenuItem functionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private MdiTabControl.TabControl tabControl1;
+        private System.Windows.Forms.ToolStripMenuItem raceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sponsorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
     }
 }
