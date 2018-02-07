@@ -32,5 +32,15 @@ namespace ProRacer
         {
 
         }
+
+        private void raceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

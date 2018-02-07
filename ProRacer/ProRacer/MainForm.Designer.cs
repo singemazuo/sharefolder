@@ -138,12 +138,14 @@
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.reportToolStripMenuItem.Text = "&Participant";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // raceToolStripMenuItem
             // 
             this.raceToolStripMenuItem.Name = "raceToolStripMenuItem";
             this.raceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.raceToolStripMenuItem.Text = "&Race";
+            this.raceToolStripMenuItem.Click += new System.EventHandler(this.raceToolStripMenuItem_Click);
             // 
             // sponsorToolStripMenuItem
             // 
