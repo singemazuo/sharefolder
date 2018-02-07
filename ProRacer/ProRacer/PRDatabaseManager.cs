@@ -54,7 +54,7 @@ namespace ProRacer
         {
             if(_instance == null)
             {
-                _instance = new PRDatabaseManager(url);
+                _instance = new PRDatabaseManager();
             }
             return _instance;
         }
