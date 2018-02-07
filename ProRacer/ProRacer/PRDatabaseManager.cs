@@ -14,7 +14,7 @@ namespace ProRacer
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
 
-        private IDictionary<>
+        private IDictionary<String>
 
         private PRDatabaseManager(string url)
         {
