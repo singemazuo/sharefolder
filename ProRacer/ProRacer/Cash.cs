@@ -27,6 +27,8 @@ namespace ProRacer
             lstParticipants.DisplayMember = "Participant.FullName";
             lstParticipants.ValueMember = "Participant.SponsorId";
             lstParticipants.DataBindings.Add("SelectedValue", dsSpo, "Sponsor.SponsorId");
+
+            lab
         }
     }
 }
