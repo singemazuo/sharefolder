@@ -18,10 +18,10 @@ namespace ProRacer
             DataSet dsPar = PRDatabaseManager.Instance().participant;
             //DataSet ds = PRDatabaseManager.Instance().SponsorWithParticipant("Cash");
 
-            lstRace.DataSource = ds;
+            lstRace.DataSource = dsSpo;
             lstRace.DisplayMember = "Cash.SponsorName";
             lstRace.ValueMember = "Cash.PKSponsorId";
-            lstRace.DataBindings.Add("SelectedValue", ds, "Cash.FKSponsorId");
+            lstRace.DataBindings.Add("SelectedValue", dsPar, "Cash.FKSponsorId");
 
             lstParticipants.DataSource = ds;
             lstParticipants.DisplayMember = "Cash.FullName";
