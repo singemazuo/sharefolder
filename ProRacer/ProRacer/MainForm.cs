@@ -21,6 +21,8 @@ namespace ProRacer
         {
             SplashForm splash = new SplashForm();
             splash.ShowDialog();
+
+            tabControl.TabPages.Add(new Cash());
         }
 
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
