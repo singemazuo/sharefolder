@@ -38,6 +38,11 @@ namespace ProRacer
             dapater = new SqlDataAdapter(cmmd);
             race = new DataSet();
             dapater.Fill(race);
+
+            cmmd = new SqlCommand("SELECT * FROM Race", conn);
+            dapater = new SqlDataAdapter(cmmd);
+            race = new DataSet();
+            dapater.Fill(race);
         }
 
         public static PRDatabaseManager instance(string url = "Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562")
