@@ -38,7 +38,7 @@ namespace ProRacer
             return _instance;
         }
 
-        public void then(Action)
+        public void then(Action action)
         {
 
         }
