@@ -12,5 +12,5 @@ namespace WindowsFormsApp18
             InitializeComponent();
         }
 
-       
+    }
 }
