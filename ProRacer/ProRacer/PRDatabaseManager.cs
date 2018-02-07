@@ -39,9 +39,9 @@ namespace ProRacer
             race = new DataSet();
             dapater.Fill(race);
 
-            cmmd = new SqlCommand("SELECT * FROM Race", conn);
+            cmmd = new SqlCommand("SELECT * FROM Sponsor", conn);
             dapater = new SqlDataAdapter(cmmd);
-            race = new DataSet();
+            sponsor = new DataSet();
             dapater.Fill(race);
         }
 
