@@ -49,7 +49,7 @@ namespace ProRacer
             {
                 if (_sponsor == null)
                 {
-                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor", conn);
+                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
                     _sponsor = new DataSet();
                     dapater.Fill(_sponsor, "Sponsor");
