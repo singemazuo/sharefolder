@@ -43,5 +43,10 @@ namespace ProRacer
         {
             tabControl.TabPages.Add(new Participant());
         }
+
+        private void participantToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

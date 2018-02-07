@@ -138,7 +138,7 @@
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.reportToolStripMenuItem.Text = "&Participant";
-            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.participantToolStripMenuItem_Click);
             // 
             // raceToolStripMenuItem
             // 
