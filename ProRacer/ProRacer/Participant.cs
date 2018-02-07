@@ -24,6 +24,7 @@ namespace ProRacer
             DataSet ds = PRDatabaseManager.Instance().participant;
             lstSearch.DataSource = ds;
             lstSearch.DisplayMember = "Participant.FullName";
+            lstSearch.ValueMember = "Participant";
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
