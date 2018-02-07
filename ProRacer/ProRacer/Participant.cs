@@ -21,6 +21,7 @@ namespace ProRacer
 
         private void Participant_Load(object sender, EventArgs e)
         {
+            DataSet ds = PRDatabaseManager.Instance().participant;
             lstSearch.DataSource = ;
         }
 
