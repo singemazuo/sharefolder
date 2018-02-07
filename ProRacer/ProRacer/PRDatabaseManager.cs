@@ -94,7 +94,7 @@ namespace ProRacer
 
         public DataSet SponsorWithParticipant(string name = null)
         {
-            SqlCommand cmmd = new SqlCommand("SELECT SponsorID,SponsorName,LastName + ',' + FirstName AS FullName FROM Sponsor", conn);
+            SqlCommand cmmd = new SqlCommand("SELECT SponsorID,SponsorName,LastName + ',' + FirstName AS FullName FROM Sponsor INNER JOIN Participant", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
             if (name != null)
