@@ -22,5 +22,25 @@ namespace ProRacer
             SplashForm splash = new SplashForm();
             splash.Show();
         }
+
+        private void cashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sponsorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void raceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
