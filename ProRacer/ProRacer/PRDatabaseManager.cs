@@ -44,7 +44,9 @@ namespace ProRacer
             }
         }
 
-        public DataSet sponsor { get; set; }
+        public DataSet sponsor {
+
+        }
         public DataSet result { get; set; }
 
         private PRDatabaseManager()
