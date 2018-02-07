@@ -21,7 +21,7 @@ namespace ProRacer
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Cash.SponsorName";
             lstRace.ValueMember = "Cash.SponsorId";
-            lstRace.DataBindings.Add("SelectedValue", ds, "Participant.SponsorId");
+            lstRace.DataBindings.Add("SelectedValue", ds, "Cash.SponsorId");
 
             lstParticipants.DataSource = ds;
             lstParticipants.DisplayMember = "Participant.FullName";
