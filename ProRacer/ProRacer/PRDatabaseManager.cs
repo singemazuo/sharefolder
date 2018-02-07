@@ -25,8 +25,10 @@ namespace ProRacer
                     _participant = new DataSet();
                     dapater.Fill(_participant, "Participant");
                 }
+                return _participant;
             }
         }
+
         public DataSet race { get; set; }
         public DataSet sponsor { get; set; }
         public DataSet result { get; set; }
