@@ -21,6 +21,7 @@ namespace ProRacer
         private void timer1_Tick(object sender, EventArgs e)
         {
             ((Timer)sender).Stop();
+            Close();
         }
 
         private void Splash_Load(object sender, EventArgs e)
