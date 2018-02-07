@@ -100,7 +100,8 @@ namespace ProRacer
             if (name != null)
                 adapter.Fill(ds, name);
             else
-                adapter.Fill();
+                adapter.Fill(ds);
+            return ds;
         }
     }
 }
