@@ -31,7 +31,7 @@ namespace ProRacer
 
         private void sponsorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl.TabPages.Add();
+            tabControl.TabPages.Add(new Sponsor());
         }
 
         private void raceToolStripMenuItem_Click(object sender, EventArgs e)
