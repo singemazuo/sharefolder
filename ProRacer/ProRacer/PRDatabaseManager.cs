@@ -23,7 +23,7 @@ namespace ProRacer
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
                     _participant = new DataSet();
-                    dapater.Fill(participant, "Participant");
+                    dapater.Fill(_participant, "Participant");
                 }
             }
         }
