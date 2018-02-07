@@ -15,11 +15,7 @@ namespace ProRacer
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
 
-        public DataSet participant {
-            get {
-
-            }
-        }
+        public DataSet participant { get; set; }
 
         private Dictionary<string, DataSet> dictionary = new Dictionary<string, DataSet>();
 
