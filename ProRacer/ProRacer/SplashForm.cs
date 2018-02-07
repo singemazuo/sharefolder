@@ -35,5 +35,10 @@ namespace ProRacer
             //daAuthen.Fill(table);
             //MessageBox.Show(table.Rows.Count+"");
         }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
