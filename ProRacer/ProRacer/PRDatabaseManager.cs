@@ -17,7 +17,10 @@ namespace ProRacer
 
         public DataSet participant {
             get {
-                    
+                if ()
+                {
+
+                }
             }
         }
         public DataSet race { get; set; }
