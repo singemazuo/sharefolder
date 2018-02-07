@@ -26,22 +26,22 @@ namespace ProRacer
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-            //tabControl.TabPages.Add(new Cash());
+            tabControl.TabPages.Add(new Cash());
         }
 
         private void sponsorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl.TabPages.Add(new Sponsor());
         }
 
         private void raceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl.TabPages.Add(new Race());
         }
 
-        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        private void participantToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl.TabPages.Add(new Participant());
         }
     }
 }

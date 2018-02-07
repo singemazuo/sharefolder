@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp18
+namespace ProRacer
 {
     public partial class Cash : Form
     {
@@ -12,5 +12,10 @@ namespace WindowsFormsApp18
             InitializeComponent();
         }
 
-       
+        private void Cash_Load(object sender,EventArgs e)
+        {
+
+        }
+
+    }
 }
