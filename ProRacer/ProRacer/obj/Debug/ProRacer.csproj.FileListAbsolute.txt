@@ -59,3 +59,4 @@ C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.c
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.exe
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.pdb
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Cash.resources
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.csprojResolveAssemblyReference.cache
