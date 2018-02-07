@@ -19,7 +19,7 @@ namespace ProRacer
         public DataSet participant {
             get
             {
-                if (value == null)
+                if (_participant == null)
                 {
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
@@ -27,11 +27,6 @@ namespace ProRacer
                     dapater.Fill(_participant, "Participant");
                 }
                 return _participant;
-            }
-
-            set
-            {
-
             }
         }
 
