@@ -14,9 +14,9 @@ namespace ProRacer
 
         private void Cash_Load(object sender,EventArgs e)
         {
-            //DataSet dsSpo = PRDatabaseManager.Instance().sponsor;
-            //DataSet dsPar = PRDatabaseManager.Instance().participant;
-            DataSet ds = PRDatabaseManager.Instance().SponsorWithParticipant("Cash");
+            DataSet dsSpo = PRDatabaseManager.Instance().sponsor;
+            DataSet dsPar = PRDatabaseManager.Instance().participant;
+            //DataSet ds = PRDatabaseManager.Instance().SponsorWithParticipant("Cash");
 
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Cash.SponsorName";
