@@ -33,7 +33,7 @@ namespace ProRacer
         public DataSet race {
             get
             {
-                if ()
+                if (_race == null)
                 {
 
                 }
