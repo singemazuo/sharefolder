@@ -28,6 +28,11 @@ namespace ProRacer
                 }
                 return _participant;
             }
+
+            set
+            {
+
+            }
         }
 
         public DataSet race {
