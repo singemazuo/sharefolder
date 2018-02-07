@@ -19,5 +19,9 @@ namespace ProRacer
             lstRace.ValueMember = "Race.RaceId";
         }
 
+        private void lstRace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
