@@ -25,7 +25,7 @@ namespace ProRacer
 
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            tabControl
         }
 
         private void sponsorToolStripMenuItem_Click(object sender, EventArgs e)
