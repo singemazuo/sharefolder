@@ -22,7 +22,7 @@ namespace ProRacer
             lstRace.ValueMember = "Sponsor.SponsorId";
             lstRace.DataBindings.Add("SelectedValue", dsPar, "Participant.SponsorId");
 
-            lstRace.DataSource = dsPar;
+            lstParticipants.DataSource = dsPar;
             lstRace.DisplayMember = "Participant.FullName";
         }
     }
