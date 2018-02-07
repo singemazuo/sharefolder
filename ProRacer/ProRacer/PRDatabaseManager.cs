@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 
 namespace ProRacer
 {
@@ -13,6 +14,14 @@ namespace ProRacer
     {
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
+
+        public DataSet participant {
+            get {
+
+            }
+        }
+
+        private Dictionary<string, DataSet> dictionary = new Dictionary<string, DataSet>();
 
         private PRDatabaseManager(string url)
         {
@@ -27,6 +36,7 @@ namespace ProRacer
             SqlDataAdapter da = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
             da.Fill(ds, "Participant");
+            this.dictionary.Add("Participant");
         }
 
         public static PRDatabaseManager instance(string url = "Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562")
