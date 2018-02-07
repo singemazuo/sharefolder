@@ -25,6 +25,7 @@ namespace ProRacer
 
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             tabControl.TabPages.Add(new Cash());
         }
 
