@@ -14,7 +14,6 @@ namespace ProRacer
         [STAThread]
         static void Main()
         {
-            Cash cash = new Cash();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
