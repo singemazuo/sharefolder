@@ -21,7 +21,7 @@ namespace ProRacer
             {
                 if (_participant == null)
                 {
-                    SqlCommand cmmd = new SqlCommand("SELECT *, FirstName + ',' + LastName AS [FullName] FROM Participant", conn);
+                    SqlCommand cmmd = new SqlCommand("SELECT *, FirstName + ',' + LastName AS [FullName] FROM Participant ORDER BY FirstName, LastName", conn);
                     SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
                     _participant = new DataSet();
                     dapater.Fill(_participant, "Participant");
