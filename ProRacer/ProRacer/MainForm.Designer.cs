@@ -36,7 +36,7 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new MdiTabControl.TabControl();
+            this.tabControl = new MdiTabControl.TabControl();
             this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,16 +111,16 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Location = new System.Drawing.Point(222, 49);
-            this.tabControl1.MenuRenderer = null;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Size = new System.Drawing.Size(404, 352);
-            this.tabControl1.TabCloseButtonImage = null;
-            this.tabControl1.TabCloseButtonImageDisabled = null;
-            this.tabControl1.TabCloseButtonImageHot = null;
-            this.tabControl1.TabIndex = 4;
+            this.tabControl.Location = new System.Drawing.Point(222, 49);
+            this.tabControl.MenuRenderer = null;
+            this.tabControl.Name = "tabControl";
+            this.tabControl.Size = new System.Drawing.Size(404, 352);
+            this.tabControl.TabCloseButtonImage = null;
+            this.tabControl.TabCloseButtonImageDisabled = null;
+            this.tabControl.TabCloseButtonImageHot = null;
+            this.tabControl.TabIndex = 4;
             // 
             // functionsToolStripMenuItem
             // 
@@ -166,7 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 423);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
@@ -197,7 +197,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem functionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
-        private MdiTabControl.TabControl tabControl1;
+        private MdiTabControl.TabControl tabControl;
         private System.Windows.Forms.ToolStripMenuItem raceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sponsorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
