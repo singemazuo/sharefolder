@@ -12,5 +12,10 @@ namespace WindowsFormsApp18
             InitializeComponent();
         }
 
+        private void Cash_Load()
+        {
+
+        }
+
     }
 }
