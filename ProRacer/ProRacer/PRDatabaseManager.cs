@@ -32,7 +32,7 @@ namespace ProRacer
             SqlDataAdapter da = new SqlDataAdapter(cmmd);
             DataSet ds = new DataSet();
             da.Fill(ds, "Participant");
-            this.dictionary.Add("Participant");
+            
         }
 
         public static PRDatabaseManager instance(string url = "Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562")
