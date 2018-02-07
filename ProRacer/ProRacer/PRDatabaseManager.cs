@@ -33,7 +33,10 @@ namespace ProRacer
         public DataSet race {
             get
             {
+                if ()
+                {
 
+                }
             }
         }
         public DataSet sponsor { get; set; }
