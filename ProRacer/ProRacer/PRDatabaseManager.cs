@@ -15,13 +15,10 @@ namespace ProRacer
         private static PRDatabaseManager _instance;
         private SqlConnection conn;
 
-        public DataSet participant {
-            get {
-
-            }
-        }
-
-        private Dictionary<string, DataSet> dictionary = new Dictionary<string, DataSet>();
+        public DataSet participant { get; set; }
+        public DataSet race { get; set; }
+        public DataSet sponsor { get; set; }
+        public DataSet result { get; set; }
 
         private PRDatabaseManager(string url)
         {
@@ -33,10 +30,12 @@ namespace ProRacer
 
             SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562");
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Participant", conn);
-            SqlDataAdapter da = new SqlDataAdapter(cmmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "Participant");
-            this.dictionary.Add("Participant");
+            SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
+            participant = new DataSet();
+            dapater.Fill(participant, "Participant");
+
+            cmmd = new SqlCommand("SELECT * FROM Race",conn);
+            dapater = new SqlDataAdapter(cmmd);
         }
 
         public static PRDatabaseManager instance(string url = "Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562")
