@@ -35,6 +35,7 @@ namespace ProRacer
             da.Fill(participant, "Participant");
 
             cmmd = new SqlCommand("SELECT * FROM Race");
+            dapater
         }
 
         public static PRDatabaseManager instance(string url = "Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562")
