@@ -38,6 +38,8 @@ namespace ProRacer
                 if (ds.Tables[0].Rows.Count > 0)
                 {
                     Properties.Settings.Default.Userid = TxtUserName.Text;
+                    Properties.Settings.Default.Password = TxtPassword.Text;
+
                     Close();
                 }
                 else
