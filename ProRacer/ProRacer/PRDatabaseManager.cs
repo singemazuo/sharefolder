@@ -76,7 +76,8 @@ namespace ProRacer
             {
                 if (_ds == null)
                 {
-
+                    SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
+                    _ds = new DataSet();
                 }
             }
         }
