@@ -71,9 +71,9 @@ namespace ProRacer
             }
         }
 
-        public DataSet ds = {
+        public DataSet ds {
             get
-                {
+            {
 
             }
         }
