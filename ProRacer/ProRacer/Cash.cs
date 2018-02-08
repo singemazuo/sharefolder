@@ -16,17 +16,17 @@ namespace ProRacer
         {
             DataSet ds = new DataSet();
             PRDatabaseManager.Instance().FillParticipant(ds);
-            PRDatabaseManager.Instance().FillSponsor(ds);
-            PRDatabaseManager.Instance().FillResult(ds);
 
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Sponsor.SponsorName";
             lstRace.ValueMember = "Sponsor.SponsorId";
 
+            PRDatabaseManager.Instance().FillSponsor(ds);
             lstParticipants.DataSource = ds;
             lstParticipants.DisplayMember = "Participant.FullName";
             lstParticipants.DataBindings.Add("SelectedValue", ds, "Participant.SponsorId");
 
+            PRDatabaseManager.Instance().FillResult(ds);
             lblCash.DataBindings.Add("Text",ds,"Result.winnings");
         }
     }
