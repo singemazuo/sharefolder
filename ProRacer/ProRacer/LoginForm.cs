@@ -15,6 +15,7 @@ namespace ProRacer
     {
         private SqlDataAdapter daAuthen;
         private SqlCommand cmmd;
+        private MainForm mainForm;
 
         public LoginForm(MainForm form)
         {
