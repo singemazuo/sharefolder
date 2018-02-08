@@ -52,7 +52,7 @@ namespace ProRacer
                 }
                 else
                 {
-                    MessageBox.Show();
+                    MessageBox.Show("Trying too many times, you might don't have an account!");
                     Close();
                 }
             }
