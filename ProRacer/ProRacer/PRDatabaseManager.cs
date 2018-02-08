@@ -95,6 +95,11 @@ namespace ProRacer
             }
         }
 
+        public void FillRace(DataSet ds)
+        {
+
+        }
+
         public void FillParticipant(DataSet ds)
         {
             SqlCommand cmmd = new SqlCommand("SELECT *, FirstName + ',' + LastName AS [FullName] FROM Participant ORDER BY FirstName, LastName", conn);
