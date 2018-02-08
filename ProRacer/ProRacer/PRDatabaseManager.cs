@@ -83,8 +83,9 @@ namespace ProRacer
 
                     cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
                     adapter = new SqlDataAdapter(cmmd);
-                    _sponsor = new DataSet();
-                    adapter.Fill(_sponsor, "Sponsor");
+                    adapter.Fill(_ds, "Sponsor");
+
+
                 }
                 return _ds;
             }
