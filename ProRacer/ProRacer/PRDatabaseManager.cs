@@ -95,7 +95,7 @@ namespace ProRacer
             }
         }
 
-        public void FillResult()
+        public void FillResult(DataSet ds)
         {
 
         }
