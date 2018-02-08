@@ -71,7 +71,12 @@ namespace ProRacer
             }
         }
 
-        public DataSet ds;
+        public DataSet ds = {
+            get
+                {
+
+            }
+        }
 
         private PRDatabaseManager()
         {
