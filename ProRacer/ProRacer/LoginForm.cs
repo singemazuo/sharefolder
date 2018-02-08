@@ -52,6 +52,7 @@ namespace ProRacer
                 }
                 else
                 {
+                    MessageBox.Show();
                     Close();
                 }
             }
