@@ -98,9 +98,8 @@ namespace ProRacer
         public void FillRace(DataSet ds)
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Race", conn);
-            SqlDataAdapter dapater = new SqlDataAdapter(cmmd);
-            _race = new DataSet();
-            dapater.Fill(_race, "Race");
+            SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
+            adapter.Fill(ds, "Race");
         }
 
         public void FillParticipant(DataSet ds)
