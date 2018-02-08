@@ -72,5 +72,10 @@ namespace ProRacer
             //this.daAuthen = new SqlDataAdapter();
             //this.daAuthen.SelectCommand = this.cmmd;
         }
+
+        private void Authenticate()
+        {
+
+        }
     }
 }
