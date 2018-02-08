@@ -16,5 +16,10 @@ namespace ProRacer
         {
             InitializeComponent();
         }
+
+        private void HelpForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
