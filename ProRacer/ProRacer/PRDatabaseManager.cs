@@ -48,7 +48,7 @@ namespace ProRacer
 
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Authenticate"+user!=null&&password!=null?"WHERE Userid = "+user+" AND Password = "+password:"", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
-            adapter.Fill(ds, "Sponsor");
+            adapter.Fill(ds, "Authen");
         }
 
         private PRDatabaseManager()
