@@ -11,11 +11,6 @@ namespace ProRacer
         {
             InitializeComponent();
 
-            Action task = () =>
-            {
-
-            };
-
             
         }
 
