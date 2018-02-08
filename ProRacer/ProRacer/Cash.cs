@@ -10,8 +10,6 @@ namespace ProRacer
         public Cash()
         {
             InitializeComponent();
-
-            
         }
 
         private void Cash_Load(object sender,EventArgs e)
