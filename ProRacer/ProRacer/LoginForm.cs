@@ -17,7 +17,7 @@ namespace ProRacer
         private SqlCommand cmmd;
         private MainForm mainForm;
 
-        public LoginForm(MainForm form)
+        public LoginForm()
         {
             this.mainForm = form;
 
