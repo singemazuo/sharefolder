@@ -95,6 +95,11 @@ namespace ProRacer
             }
         }
 
+        public void FillSponsor()
+        {
+
+        }
+
         private PRDatabaseManager()
         {
             //this.conn = new SqlConnection(url);
