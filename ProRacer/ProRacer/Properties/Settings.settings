@@ -8,5 +8,11 @@
     <Setting Name="SqlServerHost" Type="System.String" Scope="User">
       <Value Profile="(Default)">"Data Source=(local);Initial Catalog=ProRacer"</Value>
     </Setting>
+    <Setting Name="Userid" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
