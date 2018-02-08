@@ -21,7 +21,7 @@ namespace ProRacer
             ds = PRDatabaseManager.Instance().participant;
 
             cmbParticipants.DataSource = ds;
-            cmbParticipants.DisplayMember = "";
+            cmbParticipants.DisplayMember = "Participant.FullName";
         }
     }
 }
