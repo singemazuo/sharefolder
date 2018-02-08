@@ -43,9 +43,11 @@ namespace ProRacer
             adapter.Fill(ds, "Sponsor");
         }
 
-        public void FillAuthen(DataSet ds)
+        public void FillAuthen(DataSet ds,string user = null,string password = null)
         {
-
+            SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
+            adapter.Fill(ds, "Sponsor");
         }
 
         private PRDatabaseManager()
