@@ -19,6 +19,8 @@ namespace ProRacer
 
         public LoginForm(MainForm form)
         {
+            this.mainForm = form;
+
             InitializeComponent();
         }
 
