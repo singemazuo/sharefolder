@@ -18,7 +18,7 @@ namespace ProRacer
 
         private void frmRacers_Load(object sender, EventArgs e)
         {
-            ds = PRDatabaseManager.Instance().participant;
+            PRDatabaseManager.Instance().FillParticipant(ds);
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "Participant.FullName";
