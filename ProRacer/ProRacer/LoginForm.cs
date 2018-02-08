@@ -52,7 +52,7 @@ namespace ProRacer
                 }
                 else
                 {
-                    MessageBox.Show("You might don't have an account!");
+                    MessageBox.Show("Over three times, you missed your money!");
                     Close();
                 }
             }
