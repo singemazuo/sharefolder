@@ -26,7 +26,7 @@ namespace ProRacer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SqlServerHost {
+        public string SqlServerDebugHost {
             get {
                 return ((string)(this["SqlServerHost"]));
             }
