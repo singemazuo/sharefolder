@@ -15,13 +15,13 @@ namespace ProRacer
         private void Cash_Load(object sender,EventArgs e)
         {
             DataSet ds = new DataSet();
-            PRDatabaseManager.Instance().FillParticipant(ds);
+            PRDatabaseManager.Instance().FillSponsor(ds);
 
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Sponsor.SponsorName";
             lstRace.ValueMember = "Sponsor.SponsorId";
 
-            PRDatabaseManager.Instance().FillSponsor(ds);
+            PRDatabaseManager.Instance().FillParticipant(ds);
             lstParticipants.DataSource = ds;
             lstParticipants.DisplayMember = "Participant.FullName";
             lstParticipants.DataBindings.Add("SelectedValue", ds, "Participant.SponsorId");
