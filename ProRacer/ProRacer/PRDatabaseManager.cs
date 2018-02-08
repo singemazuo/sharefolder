@@ -80,7 +80,13 @@ namespace ProRacer
                     SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
                     _ds = new DataSet();
                     adapter.Fill(_ds, "Result");
+
+                    cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
+                    dapater = new SqlDataAdapter(cmmd);
+                    _sponsor = new DataSet();
+                    dapater.Fill(_sponsor, "Sponsor");
                 }
+                return _ds;
             }
         }
 
