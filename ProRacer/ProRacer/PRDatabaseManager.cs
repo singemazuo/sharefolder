@@ -45,7 +45,8 @@ namespace ProRacer
 
         public void FillAuthen(DataSet ds,string user = null,string password = null)
         {
-            SqlCommand cmmd = new SqlCommand("SELECT * FROM Authenticate WHERE", conn);
+
+            SqlCommand cmmd = new SqlCommand("SELECT * FROM Authenticate", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             adapter.Fill(ds, "Sponsor");
         }
