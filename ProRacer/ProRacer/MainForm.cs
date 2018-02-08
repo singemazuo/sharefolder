@@ -24,14 +24,12 @@ namespace ProRacer
 
             LoginForm loginForm = new LoginForm(this);
             loginForm.ShowDialog();
-
-            tabControl.TabPages.Add(new Cash());
         }
 
         private void cashToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-            tabControl.TabPages.Add(new Cash());
+            
         }
 
         private void sponsorToolStripMenuItem_Click(object sender, EventArgs e)
