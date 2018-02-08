@@ -99,8 +99,7 @@ namespace ProRacer
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
-            _ds = new DataSet();
-            adapter.Fill(_ds, "Result");
+            adapter.Fill(ds, "Result");
         }
 
         public void FillSponsor(DataSet ds)
