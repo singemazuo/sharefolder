@@ -77,7 +77,9 @@ namespace ProRacer
                 if (_ds == null)
                 {
                     SqlCommand cmmd = new SqlCommand("SELECT * FROM Results", conn);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
                     _ds = new DataSet();
+                    dapater.Fill(_result, "Result");
                 }
             }
         }
