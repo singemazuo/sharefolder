@@ -37,22 +37,27 @@
             this.sponsorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripStatusLblName = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLblTimer = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl = new MdiTabControl.TabControl();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabControl = new MdiTabControl.TabControl();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +68,7 @@
             this.functionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(626, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(692, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -112,7 +117,7 @@
             this.toolStripStatusLblTimer});
             this.statusStrip1.Location = new System.Drawing.Point(0, 401);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(626, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(692, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -129,9 +134,27 @@
             this.toolStripButton8});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(626, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(692, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripStatusLblName
+            // 
+            this.toolStripStatusLblName.Name = "toolStripStatusLblName";
+            this.toolStripStatusLblName.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblName.Text = "toolStripStatusLabel1";
+            // 
+            // toolStripStatusLblTimer
+            // 
+            this.toolStripStatusLblTimer.Name = "toolStripStatusLblTimer";
+            this.toolStripStatusLblTimer.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblTimer.Text = "toolStripStatusLabel2";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // toolStripButton1
             // 
@@ -150,39 +173,6 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "toolStripButton2";
-            // 
-            // toolStripStatusLblName
-            // 
-            this.toolStripStatusLblName.Name = "toolStripStatusLblName";
-            this.toolStripStatusLblName.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLblName.Text = "toolStripStatusLabel1";
-            // 
-            // toolStripStatusLblTimer
-            // 
-            this.toolStripStatusLblTimer.Name = "toolStripStatusLblTimer";
-            this.toolStripStatusLblTimer.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLblTimer.Text = "toolStripStatusLabel2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProRacer.Properties.Resources.wow;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 352);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tabControl
-            // 
-            this.tabControl.Location = new System.Drawing.Point(222, 49);
-            this.tabControl.MenuRenderer = null;
-            this.tabControl.Name = "tabControl";
-            this.tabControl.Size = new System.Drawing.Size(404, 352);
-            this.tabControl.TabCloseButtonImage = null;
-            this.tabControl.TabCloseButtonImageDisabled = null;
-            this.tabControl.TabCloseButtonImageHot = null;
-            this.tabControl.TabIndex = 4;
             // 
             // toolStripButton3
             // 
@@ -238,19 +228,51 @@
             this.toolStripButton8.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton8.Text = "toolStripButton8";
             // 
-            // helpToolStripMenuItem
+            // splitContainer1
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.helpToolStripMenuItem.Text = "&Help";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 49);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.tabControl);
+            this.splitContainer1.Size = new System.Drawing.Size(692, 352);
+            this.splitContainer1.SplitterDistance = 257;
+            this.splitContainer1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ProRacer.Properties.Resources.wow;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 352);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabControl
+            // 
+            this.tabControl.Location = new System.Drawing.Point(2, 0);
+            this.tabControl.MenuRenderer = null;
+            this.tabControl.Name = "tabControl";
+            this.tabControl.Size = new System.Drawing.Size(426, 349);
+            this.tabControl.TabCloseButtonImage = null;
+            this.tabControl.TabCloseButtonImageDisabled = null;
+            this.tabControl.TabCloseButtonImageHot = null;
+            this.tabControl.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 423);
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(692, 423);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -265,6 +287,10 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -285,8 +311,6 @@
         private System.Windows.Forms.ToolStripMenuItem sponsorToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblName;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblTimer;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private MdiTabControl.TabControl tabControl;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
@@ -294,5 +318,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MdiTabControl.TabControl tabControl;
     }
 }
