@@ -72,10 +72,12 @@ namespace ProRacer
             //this.daAuthen.SelectCommand = this.cmmd;
         }
 
-        private void Authenticate()
+        private bool Authenticate()
         {
             DataSet ds = new DataSet();
             PRDatabaseManager.Instance().FillAuthen(ds, TxtUserName.Text, TxtPassword.Text);
+
+
         }
     }
 }
