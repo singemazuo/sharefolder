@@ -34,6 +34,7 @@ namespace ProRacer
             try
             {
                 DataSet ds = new DataSet();
+                PRDatabaseManager.Instance().FillAuthen(ds);
                 this.cmmd.CommandText = "SELECT * FROM Authenticate WHERE Userid = '" + TxtUserName.Text + "' AND Password = '" + TxtPassword.Text + "'";
                 SqlDataReader dr = this.cmmd.ExecuteReader();
                 if (dr.Read())
