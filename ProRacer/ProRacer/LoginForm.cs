@@ -35,18 +35,8 @@ namespace ProRacer
             {
                 DataSet ds = new DataSet();
                 PRDatabaseManager.Instance().FillAuthen(ds, TxtUserName.Text, TxtPassword.Text);
-                this.cmmd.CommandText = "SELECT * FROM Authenticate WHERE Userid = '" + TxtUserName.Text + "' AND Password = '" + TxtPassword.Text + "'";
-                SqlDataReader dr = this.cmmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    if (CbxPassword.Checked)
-                    {
-                        Properties.Settings.Default[TxtUserName.Text] = TxtPassword.Text;
-                    }
-                    else
-                    {
-                        Properties.Settings.Default[TxtUserName.Text] = string.Empty;
-                    }
                     
                 }
                 else
