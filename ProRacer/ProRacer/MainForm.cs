@@ -23,6 +23,7 @@ namespace ProRacer
             splash.ShowDialog();
 
             LoginForm loginForm = new LoginForm(this);
+            loginForm.ShowDialog();
 
             tabControl.TabPages.Add(new Cash());
         }
