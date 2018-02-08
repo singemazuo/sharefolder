@@ -139,5 +139,15 @@ namespace ProRacer.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wwalczyszyn_Ilive_Windows_Live_Mesh {
+            get {
+                object obj = ResourceManager.GetObject("Wwalczyszyn-Ilive-Windows-Live-Mesh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
