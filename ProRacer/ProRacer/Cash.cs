@@ -21,11 +21,11 @@ namespace ProRacer
             lstRace.DataSource = ds;
             lstRace.DisplayMember = "Sponsor.SponsorName";
             lstRace.ValueMember = "Sponsor.SponsorId";
+            lstRace.DataBindings.Add("SelectedValue", ds, "Sponsor.SponsorId");
 
             lstParticipants.DataSource = ds;
             lstParticipants.DisplayMember = "Participant.FullName";
             lstParticipants.ValueMember = "Participant.SponsorId";
-            lstParticipants.DataBindings.Add("SelectedValue", ds, "Sponsor.SponsorId");
 
             lblCash.DataBindings.Add("Text",dsRes,"Result.winnings");
         }
