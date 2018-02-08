@@ -31,18 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sponsorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl = new MdiTabControl.TabControl();
-            this.functionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.raceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sponsorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLblName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLblTimer = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,8 +67,50 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
+            // functionsToolStripMenuItem
+            // 
+            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportToolStripMenuItem,
+            this.raceToolStripMenuItem,
+            this.sponsorToolStripMenuItem,
+            this.cashToolStripMenuItem});
+            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
+            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.functionsToolStripMenuItem.Text = "F&unctions";
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.reportToolStripMenuItem.Text = "&Participant";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.participantToolStripMenuItem_Click);
+            // 
+            // raceToolStripMenuItem
+            // 
+            this.raceToolStripMenuItem.Name = "raceToolStripMenuItem";
+            this.raceToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.raceToolStripMenuItem.Text = "&Race";
+            this.raceToolStripMenuItem.Click += new System.EventHandler(this.raceToolStripMenuItem_Click);
+            // 
+            // sponsorToolStripMenuItem
+            // 
+            this.sponsorToolStripMenuItem.Name = "sponsorToolStripMenuItem";
+            this.sponsorToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.sponsorToolStripMenuItem.Text = "&Sponsor";
+            this.sponsorToolStripMenuItem.Click += new System.EventHandler(this.sponsorToolStripMenuItem_Click);
+            // 
+            // cashToolStripMenuItem
+            // 
+            this.cashToolStripMenuItem.Name = "cashToolStripMenuItem";
+            this.cashToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.cashToolStripMenuItem.Text = "&Cash";
+            this.cashToolStripMenuItem.Click += new System.EventHandler(this.cashToolStripMenuItem_Click);
+            // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLblName,
+            this.toolStripStatusLblTimer});
             this.statusStrip1.Location = new System.Drawing.Point(0, 401);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(626, 22);
@@ -122,44 +167,17 @@
             this.tabControl.TabCloseButtonImageHot = null;
             this.tabControl.TabIndex = 4;
             // 
-            // functionsToolStripMenuItem
+            // toolStripStatusLblName
             // 
-            this.functionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportToolStripMenuItem,
-            this.raceToolStripMenuItem,
-            this.sponsorToolStripMenuItem,
-            this.cashToolStripMenuItem});
-            this.functionsToolStripMenuItem.Name = "functionsToolStripMenuItem";
-            this.functionsToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.functionsToolStripMenuItem.Text = "F&unctions";
+            this.toolStripStatusLblName.Name = "toolStripStatusLblName";
+            this.toolStripStatusLblName.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblName.Text = "toolStripStatusLabel1";
             // 
-            // reportToolStripMenuItem
+            // toolStripStatusLblTimer
             // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.reportToolStripMenuItem.Text = "&Participant";
-            this.reportToolStripMenuItem.Click += new System.EventHandler(this.participantToolStripMenuItem_Click);
-            // 
-            // raceToolStripMenuItem
-            // 
-            this.raceToolStripMenuItem.Name = "raceToolStripMenuItem";
-            this.raceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.raceToolStripMenuItem.Text = "&Race";
-            this.raceToolStripMenuItem.Click += new System.EventHandler(this.raceToolStripMenuItem_Click);
-            // 
-            // sponsorToolStripMenuItem
-            // 
-            this.sponsorToolStripMenuItem.Name = "sponsorToolStripMenuItem";
-            this.sponsorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sponsorToolStripMenuItem.Text = "&Sponsor";
-            this.sponsorToolStripMenuItem.Click += new System.EventHandler(this.sponsorToolStripMenuItem_Click);
-            // 
-            // cashToolStripMenuItem
-            // 
-            this.cashToolStripMenuItem.Name = "cashToolStripMenuItem";
-            this.cashToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cashToolStripMenuItem.Text = "&Cash";
-            this.cashToolStripMenuItem.Click += new System.EventHandler(this.cashToolStripMenuItem_Click);
+            this.toolStripStatusLblTimer.Name = "toolStripStatusLblTimer";
+            this.toolStripStatusLblTimer.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblTimer.Text = "toolStripStatusLabel2";
             // 
             // MainForm
             // 
@@ -178,6 +196,8 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -201,5 +221,7 @@
         private System.Windows.Forms.ToolStripMenuItem raceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sponsorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblName;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblTimer;
     }
 }
