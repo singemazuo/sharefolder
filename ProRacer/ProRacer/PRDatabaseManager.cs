@@ -98,7 +98,7 @@ namespace ProRacer
         public void FillSponsor()
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
-            adapter = new SqlDataAdapter(cmmd);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             adapter.Fill(_ds, "Sponsor");
         }
 
