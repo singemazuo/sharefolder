@@ -2,8 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProRacer.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
+    <Setting Name="SqlServerDebugHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562"</Value>
+    </Setting>
     <Setting Name="SqlServerHost" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">"Data Source=(local);Initial Catalog=ProRacer"</Value>
     </Setting>
   </Settings>
 </SettingsFile>
