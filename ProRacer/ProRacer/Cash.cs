@@ -19,7 +19,7 @@ namespace ProRacer
             PRDatabaseManager.Instance().FillParticipant(ds);
             PRDatabaseManager.Instance().FillResult(ds);
 
-            lstRace.DataSource = ds;
+            lstRace.DataSource = ds.Tables["Sponsor"];
             lstRace.DisplayMember = "Sponsor.SponsorName";
             lstRace.ValueMember = "Sponsor.SponsorId";
             lstRace.DataBindings.Add("SelectedValue", ds.Tables["Participant"], "SponsorId");
