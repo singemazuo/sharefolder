@@ -55,6 +55,12 @@
     <Compile Include="Cash.designer.cs">
       <DependentUpon>Cash.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +72,6 @@
     </Compile>
     <Compile Include="Participant.designer.cs">
       <DependentUpon>Participant.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Race.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Race.designer.cs">
-      <DependentUpon>Race.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashForm.cs">
       <SubType>Form</SubType>
@@ -97,14 +97,14 @@
     <EmbeddedResource Include="Cash.resx">
       <DependentUpon>Cash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Participant.resx">
       <DependentUpon>Participant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Race.resx">
-      <DependentUpon>Race.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
