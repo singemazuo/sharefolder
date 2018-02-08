@@ -37,7 +37,7 @@ namespace ProRacer
                 PRDatabaseManager.Instance().FillAuthen(ds, TxtUserName.Text, TxtPassword.Text);
                 if (ds.Tables[0].Rows.Count > 0)
                 {
-                    
+                    Close();
                 }
                 else
                 {
