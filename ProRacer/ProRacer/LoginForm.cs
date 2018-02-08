@@ -37,7 +37,7 @@ namespace ProRacer
                 if (times < 3)
                 {
                     
-                    if (ds.Tables[0].Rows.Count > 0)
+                    if (Authenticate())
                     {
                         Properties.Settings.Default.Userid = TxtUserName.Text;
                         Properties.Settings.Default.Password = TxtPassword.Text;
@@ -77,7 +77,7 @@ namespace ProRacer
             DataSet ds = new DataSet();
             PRDatabaseManager.Instance().FillAuthen(ds, TxtUserName.Text, TxtPassword.Text);
 
-
+            return ds.Tables[0].Rows.Count > 0;
         }
     }
 }
