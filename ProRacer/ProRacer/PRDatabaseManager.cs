@@ -74,7 +74,10 @@ namespace ProRacer
         public DataSet ds {
             get
             {
+                if (_ds)
+                {
 
+                }
             }
         }
 
