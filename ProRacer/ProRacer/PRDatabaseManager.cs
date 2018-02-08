@@ -99,7 +99,7 @@ namespace ProRacer
         {
             SqlCommand cmmd = new SqlCommand("SELECT *, FirstName + ',' + LastName AS [FullName] FROM Participant ORDER BY FirstName, LastName", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
-            dapater.Fill(_participant, "Participant");
+            adapter.Fill(ds, "Participant");
         }
 
         public void FillResult(DataSet ds)
