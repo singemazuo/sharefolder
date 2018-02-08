@@ -45,6 +45,7 @@ namespace ProRacer
 
         private PRDatabaseManager()
         {
+            //conn = new SqlConnection(Properties.Settings.Default.SqlServerHost);
             conn = new SqlConnection(Properties.Settings.Default.SqlServerDebugHost);
         }
 
