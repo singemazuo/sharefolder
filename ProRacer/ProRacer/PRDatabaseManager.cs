@@ -87,7 +87,7 @@ namespace ProRacer
 
                     cmmd = new SqlCommand("SELECT * FROM Race", conn);
                     adapter = new SqlDataAdapter(cmmd);
-                    adapter.Fill(_race, "Race");
+                    adapter.Fill(_ds, "Race");
                 }
                 return _ds;
             }
