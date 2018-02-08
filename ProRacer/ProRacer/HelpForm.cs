@@ -19,7 +19,7 @@ namespace ProRacer
 
         private void HelpForm_Load(object sender, EventArgs e)
         {
-            lblProName.Text = Application
+            //lblProName.Text = Application
         }
     }
 }
