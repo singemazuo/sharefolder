@@ -45,7 +45,7 @@ namespace ProRacer
 
         public void FillAuthen(DataSet ds,string user = null,string password = null)
         {
-            string query = "";
+            string query = "SELECT * FROM Authenticate";
             if (user != null && password != null)
             {
 
