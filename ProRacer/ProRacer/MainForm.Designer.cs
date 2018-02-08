@@ -40,10 +40,10 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl = new MdiTabControl.TabControl();
             this.toolStripStatusLblName = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLblTimer = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabControl = new MdiTabControl.TabControl();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -146,6 +146,18 @@
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
+            // toolStripStatusLblName
+            // 
+            this.toolStripStatusLblName.Name = "toolStripStatusLblName";
+            this.toolStripStatusLblName.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblName.Text = "toolStripStatusLabel1";
+            // 
+            // toolStripStatusLblTimer
+            // 
+            this.toolStripStatusLblTimer.Name = "toolStripStatusLblTimer";
+            this.toolStripStatusLblTimer.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLblTimer.Text = "toolStripStatusLabel2";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProRacer.Properties.Resources.wow;
@@ -166,18 +178,6 @@
             this.tabControl.TabCloseButtonImageDisabled = null;
             this.tabControl.TabCloseButtonImageHot = null;
             this.tabControl.TabIndex = 4;
-            // 
-            // toolStripStatusLblName
-            // 
-            this.toolStripStatusLblName.Name = "toolStripStatusLblName";
-            this.toolStripStatusLblName.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLblName.Text = "toolStripStatusLabel1";
-            // 
-            // toolStripStatusLblTimer
-            // 
-            this.toolStripStatusLblTimer.Name = "toolStripStatusLblTimer";
-            this.toolStripStatusLblTimer.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLblTimer.Text = "toolStripStatusLabel2";
             // 
             // MainForm
             // 
@@ -214,14 +214,14 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem functionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
-        private MdiTabControl.TabControl tabControl;
         private System.Windows.Forms.ToolStripMenuItem raceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sponsorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cashToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblName;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLblTimer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MdiTabControl.TabControl tabControl;
     }
 }
