@@ -71,6 +71,8 @@ namespace ProRacer
             }
         }
 
+        public DataSet ds;
+
         private PRDatabaseManager()
         {
             //this.conn = new SqlConnection(url);
