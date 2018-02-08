@@ -22,7 +22,7 @@ namespace ProRacer
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "Participant.FullName";
-            cmbParticipants.ValueMember = "";
+            cmbParticipants.ValueMember = "Participant.ParticipantId";
         }
     }
 }
