@@ -95,6 +95,11 @@ namespace ProRacer
             }
         }
 
+        public void FillResult()
+        {
+
+        }
+
         public void FillSponsor(DataSet ds)
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Sponsor ORDER BY SponsorName", conn);
