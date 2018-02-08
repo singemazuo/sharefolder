@@ -48,9 +48,9 @@ namespace ProRacer
             string query = "SELECT * FROM Authenticate";
             if (user != null && password != null)
             {
-
+                "SELECT * FROM Authenticate WHERE Userid = '" + user + "' AND Password = '" + password + "'";
             }
-            SqlCommand cmmd = new SqlCommand("SELECT * FROM Authenticate"+?" WHERE Userid = '"+user+"' AND Password = '"+password+"'":"", conn);
+            SqlCommand cmmd = new SqlCommand(:"", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             adapter.Fill(ds, "Authen");
         }
