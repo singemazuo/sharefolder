@@ -57,62 +57,60 @@
             this.pnlNav.Controls.Add(this.btnNext);
             this.pnlNav.Controls.Add(this.btnPrevious);
             this.pnlNav.Controls.Add(this.btnFirst);
-            this.pnlNav.Location = new System.Drawing.Point(146, 217);
-            this.pnlNav.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlNav.Location = new System.Drawing.Point(110, 176);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(111, 29);
+            this.pnlNav.Size = new System.Drawing.Size(84, 24);
             this.pnlNav.TabIndex = 34;
             // 
             // btnLast
             // 
             this.btnLast.Image = ((System.Drawing.Image)(resources.GetObject("btnLast.Image")));
             this.btnLast.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLast.Location = new System.Drawing.Point(80, 0);
-            this.btnLast.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLast.Location = new System.Drawing.Point(60, 0);
             this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(27, 25);
+            this.btnLast.Size = new System.Drawing.Size(20, 20);
             this.btnLast.TabIndex = 5;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
             this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
             this.btnNext.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNext.Location = new System.Drawing.Point(53, 0);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNext.Location = new System.Drawing.Point(40, 0);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(27, 25);
+            this.btnNext.Size = new System.Drawing.Size(20, 20);
             this.btnNext.TabIndex = 4;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrevious
             // 
             this.btnPrevious.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.Image = ((System.Drawing.Image)(resources.GetObject("btnPrevious.Image")));
             this.btnPrevious.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrevious.Location = new System.Drawing.Point(27, 0);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrevious.Location = new System.Drawing.Point(20, 0);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(27, 25);
+            this.btnPrevious.Size = new System.Drawing.Size(20, 20);
             this.btnPrevious.TabIndex = 3;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnFirst
             // 
             this.btnFirst.Image = ((System.Drawing.Image)(resources.GetObject("btnFirst.Image")));
             this.btnFirst.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnFirst.Location = new System.Drawing.Point(0, 0);
-            this.btnFirst.Margin = new System.Windows.Forms.Padding(4);
             this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(27, 25);
+            this.btnFirst.Size = new System.Drawing.Size(20, 20);
             this.btnFirst.TabIndex = 2;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // lstSearch
             // 
-            this.lstSearch.ItemHeight = 16;
-            this.lstSearch.Location = new System.Drawing.Point(269, 40);
-            this.lstSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.lstSearch.Location = new System.Drawing.Point(202, 32);
             this.lstSearch.Name = "lstSearch";
-            this.lstSearch.Size = new System.Drawing.Size(207, 116);
+            this.lstSearch.Size = new System.Drawing.Size(156, 95);
             this.lstSearch.TabIndex = 33;
             this.lstSearch.Visible = false;
+            this.lstSearch.SelectedIndexChanged += new System.EventHandler(this.lstSearch_SelectedIndexChanged);
             // 
             // Panel1
             // 
@@ -125,11 +123,10 @@
             this.Panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.Panel1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Panel1.Location = new System.Drawing.Point(76, 178);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.Panel1.Location = new System.Drawing.Point(57, 145);
             this.Panel1.Name = "Panel1";
             this.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel1.Size = new System.Drawing.Size(279, 31);
+            this.Panel1.Size = new System.Drawing.Size(210, 26);
             this.Panel1.TabIndex = 32;
             this.Panel1.TabStop = true;
             // 
@@ -140,10 +137,9 @@
             this.btnAdd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAdd.Size = new System.Drawing.Size(63, 25);
+            this.btnAdd.Size = new System.Drawing.Size(47, 20);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -154,11 +150,10 @@
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpdate.Location = new System.Drawing.Point(128, 0);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(96, 0);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnUpdate.Size = new System.Drawing.Size(80, 25);
+            this.btnUpdate.Size = new System.Drawing.Size(60, 20);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -169,11 +164,10 @@
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancel.Location = new System.Drawing.Point(199, 0);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(149, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCancel.Size = new System.Drawing.Size(68, 25);
+            this.btnCancel.Size = new System.Drawing.Size(51, 20);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -184,11 +178,10 @@
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnDelete.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDelete.Location = new System.Drawing.Point(64, 0);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Location = new System.Drawing.Point(48, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDelete.Size = new System.Drawing.Size(63, 25);
+            this.btnDelete.Size = new System.Drawing.Size(47, 20);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -202,12 +195,10 @@
             this.Frame1.Controls.Add(this.lblLabels_6);
             this.Frame1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame1.Location = new System.Drawing.Point(13, 30);
-            this.Frame1.Margin = new System.Windows.Forms.Padding(4);
+            this.Frame1.Location = new System.Drawing.Point(10, 24);
             this.Frame1.Name = "Frame1";
-            this.Frame1.Padding = new System.Windows.Forms.Padding(4);
             this.Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Frame1.Size = new System.Drawing.Size(381, 108);
+            this.Frame1.Size = new System.Drawing.Size(286, 88);
             this.Frame1.TabIndex = 31;
             this.Frame1.TabStop = false;
             // 
@@ -217,11 +208,10 @@
             this.Label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.Label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Label1.Location = new System.Drawing.Point(16, 63);
-            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label1.Location = new System.Drawing.Point(12, 51);
             this.Label1.Name = "Label1";
             this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label1.Size = new System.Drawing.Size(99, 21);
+            this.Label1.Size = new System.Drawing.Size(74, 17);
             this.Label1.TabIndex = 6;
             this.Label1.Text = "Address:";
             // 
@@ -232,12 +222,11 @@
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtAddress.Location = new System.Drawing.Point(123, 59);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Location = new System.Drawing.Point(92, 48);
             this.txtAddress.MaxLength = 30;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtAddress.Size = new System.Drawing.Size(241, 23);
+            this.txtAddress.Size = new System.Drawing.Size(182, 20);
             this.txtAddress.TabIndex = 5;
             // 
             // txtName
@@ -247,12 +236,11 @@
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtName.Location = new System.Drawing.Point(144, 25);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(108, 20);
             this.txtName.MaxLength = 30;
             this.txtName.Name = "txtName";
             this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtName.Size = new System.Drawing.Size(212, 23);
+            this.txtName.Size = new System.Drawing.Size(160, 20);
             this.txtName.TabIndex = 3;
             // 
             // lblLabels_6
@@ -261,25 +249,26 @@
             this.lblLabels_6.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_6.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_6.Location = new System.Drawing.Point(16, 30);
-            this.lblLabels_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_6.Location = new System.Drawing.Point(12, 24);
             this.lblLabels_6.Name = "lblLabels_6";
             this.lblLabels_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_6.Size = new System.Drawing.Size(111, 21);
+            this.lblLabels_6.Size = new System.Drawing.Size(83, 17);
             this.lblLabels_6.TabIndex = 2;
             this.lblLabels_6.Text = "Sponsor Name:";
             // 
             // Sponsor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 268);
+            this.ClientSize = new System.Drawing.Size(362, 218);
             this.Controls.Add(this.pnlNav);
             this.Controls.Add(this.lstSearch);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.Frame1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Sponsor";
             this.Text = "Sponsor";
+            this.Load += new System.EventHandler(this.Sponsor_Load);
             this.pnlNav.ResumeLayout(false);
             this.Panel1.ResumeLayout(false);
             this.Frame1.ResumeLayout(false);

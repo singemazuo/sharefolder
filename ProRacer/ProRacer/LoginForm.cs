@@ -39,8 +39,12 @@ namespace ProRacer
                     
                     if (Authenticate())
                     {
-                        Properties.Settings.Default.Userid = TxtUserName.Text;
-                        Properties.Settings.Default.Password = TxtPassword.Text;
+                        if (cbxPassword.Checked)
+                        {
+                            Properties.Settings.Default.Userid = TxtUserName.Text;
+                            Properties.Settings.Default.Password = TxtPassword.Text;
+                            Properties.Settings.Default.Save();
+                        }
 
                         Close();
                     }

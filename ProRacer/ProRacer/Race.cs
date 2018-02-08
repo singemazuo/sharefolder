@@ -13,37 +13,62 @@ namespace ProRacer
 {
     public partial class Race : Form
     {
-        public Race()
+        private IAdjustStatusBar adjustStatusBar;
+
+        public Race(IAdjustStatusBar adjust)
         {
+            adjustStatusBar = adjust;
+
             InitializeComponent();
         }
 
         public void Race_Load(Object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Database=ProRacer;User ID=singemazuo;Password=z28397562;Integrated Security=False;");
-            SqlCommand command = new SqlCommand("SELECT * FROM Race",conn);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
+            adjustStatusBar.AdjustLoadStatus(0);
+
             DataSet ds = new DataSet();
+            PRDatabaseManager.Instance().FillRace(ds);
 
-            try
+            cmbSearch.DataSource = ds;
+            cmbSearch.DisplayMember = "Race.Name";
+
+            dtpRaceDate.DataBindings.Add("Value",ds,"Race.RaceDate");
+
+            txtRaceName.DataBindings.Add("Text",ds,"Race.Name");
+
+            txtRaceDistance.DataBindings.Add("Text",ds,"Race.Distance");
+
+            cmbLocation.DataSource = ds;
+            cmbLocation.DisplayMember = "Race.Location";
+
+            txtStart.DataBindings.Add("Text",ds,"Race.StartPoint");
+
+            txtFinish.DataBindings.Add("Text",ds,"Race.FinishPoint");
+
+            txtLevel.DataBindings.Add("Text",ds,"Race.Level");
+
+            adjustStatusBar.AdjustLoadStatus(1);
+        }
+
+        private void txtLevel_TextChanged(object sender, EventArgs e)
+        {
+            if (txtLevel.Text == "C")
             {
-                adapter.Fill(ds,"LocalRace");
-
-                if(ds.Tables.Count > 0)
-                {
-                    cmbSearch.DataSource = ds;
-                    cmbSearch.DisplayMember = "LocalRace.Name";
-                }
-
-                //dtpRaceDate.DataBindings.Add("Text",ds,"RaceDate");
-
+                optLevelC.Checked = true;
             }
-            catch(SqlException ex)
+            else if (txtLevel.Text == "B")
             {
-                MessageBox.Show(ex.ToString());
+                optLevelB.Checked = true;
             }
-            
+            else if (txtLevel.Text == "A")
+            {
+                optLevelA.Checked = true;
+            }
+        }
+
+        private void cmbSearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            adjustStatusBar.AdjustPosition(cmbSearch.SelectedIndex+1, cmbSearch.Items.Count);
         }
     }
 }

@@ -71,6 +71,7 @@
             this.cmbSearch.Name = "cmbSearch";
             this.cmbSearch.Size = new System.Drawing.Size(264, 21);
             this.cmbSearch.TabIndex = 40;
+            this.cmbSearch.SelectedIndexChanged += new System.EventHandler(this.cmbSearch_SelectedIndexChanged);
             // 
             // Frame1
             // 
@@ -178,6 +179,7 @@
             this.txtLevel.Name = "txtLevel";
             this.txtLevel.Size = new System.Drawing.Size(28, 20);
             this.txtLevel.TabIndex = 38;
+            this.txtLevel.TextChanged += new System.EventHandler(this.txtLevel_TextChanged);
             // 
             // Panel1
             // 
@@ -413,12 +415,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.textToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(94, 26);
             // 
             // textToolStripMenuItem
             // 
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.textToolStripMenuItem.Text = "text";
             // 
             // Race
@@ -432,9 +434,10 @@
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.Frame2);
             this.Controls.Add(this.Frame3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Race";
             this.Text = "Race";
+            this.Load += new System.EventHandler(this.Race_Load);
             this.Frame1.ResumeLayout(false);
             this.Frame1.PerformLayout();
             this.Panel1.ResumeLayout(false);
@@ -444,7 +447,6 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Load += new System.EventHandler(Race_Load);
 
         }
 

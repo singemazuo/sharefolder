@@ -57,11 +57,17 @@
             this.rdoMale = new System.Windows.Forms.RadioButton();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.cmbParticipants = new System.Windows.Forms.ComboBox();
+            this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
             this.Panel1.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.Frame3.SuspendLayout();
             this.Frame2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.pnlNav.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel1
@@ -75,11 +81,10 @@
             this.Panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.Panel1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Panel1.Location = new System.Drawing.Point(144, 404);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.Panel1.Location = new System.Drawing.Point(108, 328);
             this.Panel1.Name = "Panel1";
             this.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel1.Size = new System.Drawing.Size(283, 29);
+            this.Panel1.Size = new System.Drawing.Size(213, 24);
             this.Panel1.TabIndex = 43;
             this.Panel1.TabStop = true;
             // 
@@ -90,10 +95,9 @@
             this.btnAdd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAdd.Size = new System.Drawing.Size(64, 25);
+            this.btnAdd.Size = new System.Drawing.Size(48, 20);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -104,11 +108,10 @@
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpdate.Location = new System.Drawing.Point(133, 0);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(100, 0);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnUpdate.Size = new System.Drawing.Size(65, 25);
+            this.btnUpdate.Size = new System.Drawing.Size(49, 20);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -120,11 +123,10 @@
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancel.Location = new System.Drawing.Point(207, 0);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(155, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCancel.Size = new System.Drawing.Size(64, 25);
+            this.btnCancel.Size = new System.Drawing.Size(48, 20);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -135,11 +137,10 @@
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnDelete.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDelete.Location = new System.Drawing.Point(64, 0);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Location = new System.Drawing.Point(48, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDelete.Size = new System.Drawing.Size(64, 25);
+            this.btnDelete.Size = new System.Drawing.Size(48, 20);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -147,21 +148,18 @@
             // GroupBox1
             // 
             this.GroupBox1.Controls.Add(this.chkMember);
-            this.GroupBox1.Location = new System.Drawing.Point(360, 340);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Location = new System.Drawing.Point(270, 276);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox1.Size = new System.Drawing.Size(177, 41);
+            this.GroupBox1.Size = new System.Drawing.Size(133, 33);
             this.GroupBox1.TabIndex = 40;
             this.GroupBox1.TabStop = false;
             // 
             // chkMember
             // 
             this.chkMember.AutoSize = true;
-            this.chkMember.Location = new System.Drawing.Point(11, 12);
-            this.chkMember.Margin = new System.Windows.Forms.Padding(4);
+            this.chkMember.Location = new System.Drawing.Point(8, 10);
             this.chkMember.Name = "chkMember";
-            this.chkMember.Size = new System.Drawing.Size(106, 21);
+            this.chkMember.Size = new System.Drawing.Size(84, 17);
             this.chkMember.TabIndex = 0;
             this.chkMember.Text = "IAC Member";
             this.chkMember.UseVisualStyleBackColor = true;
@@ -177,12 +175,10 @@
             this.Frame3.Controls.Add(this.lblLabels_0);
             this.Frame3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frame3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame3.Location = new System.Drawing.Point(50, 223);
-            this.Frame3.Margin = new System.Windows.Forms.Padding(4);
+            this.Frame3.Location = new System.Drawing.Point(38, 181);
             this.Frame3.Name = "Frame3";
-            this.Frame3.Padding = new System.Windows.Forms.Padding(4);
             this.Frame3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Frame3.Size = new System.Drawing.Size(293, 150);
+            this.Frame3.Size = new System.Drawing.Size(220, 122);
             this.Frame3.TabIndex = 38;
             this.Frame3.TabStop = false;
             // 
@@ -193,21 +189,19 @@
             this.cmbCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCountry.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCountry.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbCountry.Location = new System.Drawing.Point(112, 18);
-            this.cmbCountry.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCountry.Location = new System.Drawing.Point(84, 15);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbCountry.Size = new System.Drawing.Size(172, 24);
+            this.cmbCountry.Size = new System.Drawing.Size(130, 22);
             this.cmbCountry.Sorted = true;
             this.cmbCountry.TabIndex = 7;
             // 
             // cmbSponsor
             // 
             this.cmbSponsor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSponsor.Location = new System.Drawing.Point(80, 91);
-            this.cmbSponsor.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbSponsor.Location = new System.Drawing.Point(60, 74);
             this.cmbSponsor.Name = "cmbSponsor";
-            this.cmbSponsor.Size = new System.Drawing.Size(204, 24);
+            this.cmbSponsor.Size = new System.Drawing.Size(154, 22);
             this.cmbSponsor.TabIndex = 6;
             // 
             // txtRank
@@ -217,12 +211,11 @@
             this.txtRank.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRank.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRank.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtRank.Location = new System.Drawing.Point(112, 57);
-            this.txtRank.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRank.Location = new System.Drawing.Point(84, 46);
             this.txtRank.MaxLength = 3;
             this.txtRank.Name = "txtRank";
             this.txtRank.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRank.Size = new System.Drawing.Size(43, 23);
+            this.txtRank.Size = new System.Drawing.Size(33, 20);
             this.txtRank.TabIndex = 1;
             // 
             // lblLabels_2
@@ -231,11 +224,10 @@
             this.lblLabels_2.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_2.Location = new System.Drawing.Point(12, 97);
-            this.lblLabels_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_2.Location = new System.Drawing.Point(9, 79);
             this.lblLabels_2.Name = "lblLabels_2";
             this.lblLabels_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_2.Size = new System.Drawing.Size(101, 21);
+            this.lblLabels_2.Size = new System.Drawing.Size(76, 17);
             this.lblLabels_2.TabIndex = 4;
             this.lblLabels_2.Text = "Sponsor:";
             // 
@@ -245,11 +237,10 @@
             this.lblLabels_4.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_4.Location = new System.Drawing.Point(12, 60);
-            this.lblLabels_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_4.Location = new System.Drawing.Point(9, 49);
             this.lblLabels_4.Name = "lblLabels_4";
             this.lblLabels_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_4.Size = new System.Drawing.Size(101, 21);
+            this.lblLabels_4.Size = new System.Drawing.Size(76, 17);
             this.lblLabels_4.TabIndex = 2;
             this.lblLabels_4.Text = "World Rank:";
             // 
@@ -259,11 +250,10 @@
             this.lblLabels_0.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_0.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_0.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_0.Location = new System.Drawing.Point(12, 25);
-            this.lblLabels_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_0.Location = new System.Drawing.Point(9, 20);
             this.lblLabels_0.Name = "lblLabels_0";
             this.lblLabels_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_0.Size = new System.Drawing.Size(113, 21);
+            this.lblLabels_0.Size = new System.Drawing.Size(85, 17);
             this.lblLabels_0.TabIndex = 0;
             this.lblLabels_0.Text = "Home Country:";
             // 
@@ -276,12 +266,10 @@
             this.Frame2.Controls.Add(this.lblLabels_1);
             this.Frame2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frame2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame2.Location = new System.Drawing.Point(90, 100);
-            this.Frame2.Margin = new System.Windows.Forms.Padding(4);
+            this.Frame2.Location = new System.Drawing.Point(68, 81);
             this.Frame2.Name = "Frame2";
-            this.Frame2.Padding = new System.Windows.Forms.Padding(4);
             this.Frame2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Frame2.Size = new System.Drawing.Size(337, 97);
+            this.Frame2.Size = new System.Drawing.Size(253, 79);
             this.Frame2.TabIndex = 37;
             this.Frame2.TabStop = false;
             // 
@@ -292,12 +280,11 @@
             this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastName.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtLastName.Location = new System.Drawing.Point(128, 55);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLastName.Location = new System.Drawing.Point(96, 45);
             this.txtLastName.MaxLength = 15;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtLastName.Size = new System.Drawing.Size(175, 23);
+            this.txtLastName.Size = new System.Drawing.Size(132, 20);
             this.txtLastName.TabIndex = 1;
             // 
             // txtFirstName
@@ -307,12 +294,11 @@
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtFirstName.Location = new System.Drawing.Point(128, 22);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirstName.Location = new System.Drawing.Point(96, 18);
             this.txtFirstName.MaxLength = 15;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFirstName.Size = new System.Drawing.Size(175, 23);
+            this.txtFirstName.Size = new System.Drawing.Size(132, 20);
             this.txtFirstName.TabIndex = 0;
             // 
             // lblLabels_3
@@ -321,11 +307,10 @@
             this.lblLabels_3.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_3.Location = new System.Drawing.Point(12, 55);
-            this.lblLabels_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_3.Location = new System.Drawing.Point(9, 45);
             this.lblLabels_3.Name = "lblLabels_3";
             this.lblLabels_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_3.Size = new System.Drawing.Size(161, 21);
+            this.lblLabels_3.Size = new System.Drawing.Size(121, 17);
             this.lblLabels_3.TabIndex = 2;
             this.lblLabels_3.Text = "Last Name:";
             // 
@@ -335,33 +320,31 @@
             this.lblLabels_1.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_1.Location = new System.Drawing.Point(12, 26);
-            this.lblLabels_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLabels_1.Location = new System.Drawing.Point(9, 21);
             this.lblLabels_1.Name = "lblLabels_1";
             this.lblLabels_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblLabels_1.Size = new System.Drawing.Size(117, 21);
+            this.lblLabels_1.Size = new System.Drawing.Size(88, 17);
             this.lblLabels_1.TabIndex = 0;
             this.lblLabels_1.Text = "First Name:";
             // 
             // txtGender
             // 
-            this.txtGender.Location = new System.Drawing.Point(465, 273);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGender.Location = new System.Drawing.Point(349, 222);
             this.txtGender.Name = "txtGender";
-            this.txtGender.Size = new System.Drawing.Size(36, 22);
+            this.txtGender.Size = new System.Drawing.Size(28, 20);
             this.txtGender.TabIndex = 37;
+            this.txtGender.TextChanged += new System.EventHandler(this.txtGender_TextChanged);
             // 
-
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rdoOther);
             this.groupBox2.Controls.Add(this.rdoMale);
             this.groupBox2.Controls.Add(this.rdoFemale);
-            this.groupBox2.Location = new System.Drawing.Point(360, 223);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(270, 181);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(117, 118);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(88, 96);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gender";
@@ -369,10 +352,10 @@
             // rdoOther
             // 
             this.rdoOther.AutoSize = true;
-            this.rdoOther.Location = new System.Drawing.Point(23, 85);
-            this.rdoOther.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoOther.Location = new System.Drawing.Point(17, 69);
+            this.rdoOther.Margin = new System.Windows.Forms.Padding(2);
             this.rdoOther.Name = "rdoOther";
-            this.rdoOther.Size = new System.Drawing.Size(65, 21);
+            this.rdoOther.Size = new System.Drawing.Size(51, 17);
             this.rdoOther.TabIndex = 41;
             this.rdoOther.TabStop = true;
             this.rdoOther.Text = "Other";
@@ -381,10 +364,10 @@
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(23, 58);
-            this.rdoMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoMale.Location = new System.Drawing.Point(17, 47);
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
             this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(59, 21);
+            this.rdoMale.Size = new System.Drawing.Size(48, 17);
             this.rdoMale.TabIndex = 40;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "Male";
@@ -393,10 +376,10 @@
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Location = new System.Drawing.Point(23, 31);
-            this.rdoFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdoFemale.Location = new System.Drawing.Point(17, 25);
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
             this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(75, 21);
+            this.rdoFemale.Size = new System.Drawing.Size(59, 17);
             this.rdoFemale.TabIndex = 39;
             this.rdoFemale.TabStop = true;
             this.rdoFemale.Text = "Female";
@@ -405,16 +388,72 @@
             // cmbParticipants
             // 
             this.cmbParticipants.FormattingEnabled = true;
-            this.cmbParticipants.Location = new System.Drawing.Point(79, 33);
+            this.cmbParticipants.Location = new System.Drawing.Point(59, 27);
+            this.cmbParticipants.Margin = new System.Windows.Forms.Padding(2);
             this.cmbParticipants.Name = "cmbParticipants";
-            this.cmbParticipants.Size = new System.Drawing.Size(398, 24);
+            this.cmbParticipants.Size = new System.Drawing.Size(300, 21);
             this.cmbParticipants.TabIndex = 45;
+            this.cmbParticipants.SelectedIndexChanged += new System.EventHandler(this.cmbParticipants_SelectedIndexChanged);
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlNav.Controls.Add(this.btnLast);
+            this.pnlNav.Controls.Add(this.btnNext);
+            this.pnlNav.Controls.Add(this.btnPrevious);
+            this.pnlNav.Controls.Add(this.btnFirst);
+            this.pnlNav.Location = new System.Drawing.Point(164, 358);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(84, 24);
+            this.pnlNav.TabIndex = 46;
+            // 
+            // btnLast
+            // 
+            this.btnLast.Image = ((System.Drawing.Image)(resources.GetObject("btnLast.Image")));
+            this.btnLast.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLast.Location = new System.Drawing.Point(60, 0);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(20, 20);
+            this.btnLast.TabIndex = 5;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNext.Location = new System.Drawing.Point(40, 0);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(20, 20);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Image = ((System.Drawing.Image)(resources.GetObject("btnPrevious.Image")));
+            this.btnPrevious.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPrevious.Location = new System.Drawing.Point(20, 0);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(20, 20);
+            this.btnPrevious.TabIndex = 3;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.Image = ((System.Drawing.Image)(resources.GetObject("btnFirst.Image")));
+            this.btnFirst.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnFirst.Location = new System.Drawing.Point(0, 0);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(20, 20);
+            this.btnFirst.TabIndex = 2;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // Participant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 460);
+            this.ClientSize = new System.Drawing.Size(436, 397);
+            this.Controls.Add(this.pnlNav);
             this.Controls.Add(this.cmbParticipants);
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.groupBox2);
@@ -423,7 +462,7 @@
             this.Controls.Add(this.Frame3);
             this.Controls.Add(this.Frame2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Participant";
             this.Text = "Participant";
             this.Load += new System.EventHandler(this.frmRacers_Load);
@@ -436,6 +475,7 @@
             this.Frame2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.pnlNav.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,6 +510,11 @@
         private System.Windows.Forms.RadioButton rdoMale;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.ComboBox cmbParticipants;
+        private System.Windows.Forms.Panel pnlNav;
+        private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnFirst;
     }
 }
 
