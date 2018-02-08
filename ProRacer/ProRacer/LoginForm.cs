@@ -52,7 +52,7 @@ namespace ProRacer
                 }
                 else
                 {
-
+                    Close();
                 }
             }
             catch (Exception ex)
