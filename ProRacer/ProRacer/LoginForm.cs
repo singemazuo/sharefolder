@@ -53,10 +53,10 @@ namespace ProRacer
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
-            this.cmmd = new SqlCommand("",conn);
-            this.daAuthen = new SqlDataAdapter();
-            this.daAuthen.SelectCommand = this.cmmd;
+            //SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
+            //this.cmmd = new SqlCommand("",conn);
+            //this.daAuthen = new SqlDataAdapter();
+            //this.daAuthen.SelectCommand = this.cmmd;
         }
     }
 }
