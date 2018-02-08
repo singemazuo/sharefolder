@@ -22,5 +22,17 @@ namespace ProRacer.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SqlServerHost {
+            get {
+                return ((string)(this["SqlServerHost"]));
+            }
+            set {
+                this["SqlServerHost"] = value;
+            }
+        }
     }
 }
