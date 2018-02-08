@@ -49,6 +49,7 @@ namespace ProRacer
                     {
                         MessageBox.Show("You haven't owned an account!!");
                     }
+                    times++;
                 }
                 else
                 {
