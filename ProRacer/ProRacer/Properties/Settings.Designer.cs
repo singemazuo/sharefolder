@@ -22,5 +22,54 @@ namespace ProRacer.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial C" +
+            "atalog=ProRacer;User ID=singemazuo;Password=z28397562\"")]
+        public string SqlServerDebugHost {
+            get {
+                return ((string)(this["SqlServerDebugHost"]));
+            }
+            set {
+                this["SqlServerDebugHost"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"Data Source=(local);Initial Catalog=ProRacer\"")]
+        public string SqlServerHost {
+            get {
+                return ((string)(this["SqlServerHost"]));
+            }
+            set {
+                this["SqlServerHost"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Userid {
+            get {
+                return ((string)(this["Userid"]));
+            }
+            set {
+                this["Userid"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Password {
+            get {
+                return ((string)(this["Password"]));
+            }
+            set {
+                this["Password"] = value;
+            }
+        }
     }
 }

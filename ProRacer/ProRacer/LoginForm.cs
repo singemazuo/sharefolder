@@ -15,9 +15,13 @@ namespace ProRacer
     {
         private SqlDataAdapter daAuthen;
         private SqlCommand cmmd;
+        private MainForm mainForm;
+        private int times = 0;
 
-        public LoginForm()
+        public LoginForm(MainForm form)
         {
+            this.mainForm = form;
+
             InitializeComponent();
         }
 
@@ -30,38 +34,54 @@ namespace ProRacer
         {
             try
             {
-                this.cmmd.CommandText = "SELECT * FROM Authenticate WHERE Userid = '" + TxtUserName.Text + "' AND Password = '" + TxtPassword.Text + "'";
-                SqlDataReader dr = this.cmmd.ExecuteReader();
-                if (dr.Read())
+                if (times < 3)
                 {
-                    if (CbxPassword.Checked)
+                    
+                    if (Authenticate())
                     {
-                        Properties.Settings.Default[TxtUserName.Text] = TxtPassword.Text;
+                        if (cbxPassword.Checked)
+                        {
+                            Properties.Settings.Default.Userid = TxtUserName.Text;
+                            Properties.Settings.Default.Password = TxtPassword.Text;
+                            Properties.Settings.Default.Save();
+                        }
+
+                        Close();
                     }
                     else
                     {
-                        Properties.Settings.Default[TxtUserName.Text] = string.Empty;
+                        MessageBox.Show("You haven't owned an account!!");
                     }
-                    
+
+                    times++;
                 }
                 else
                 {
-                    MessageBox.Show("You haven't owned an account!!");
+                    MessageBox.Show("Over three times, you missed your money!");
+                    Close();
                 }
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
             
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
-            this.cmmd = new SqlCommand("",conn);
-            this.daAuthen = new SqlDataAdapter();
-            this.daAuthen.SelectCommand = this.cmmd;
+            //SqlConnection conn = new SqlConnection("server=(local);Database=ProRacer;integrated security=SSPI");
+            //this.cmmd = new SqlCommand("",conn);
+            //this.daAuthen = new SqlDataAdapter();
+            //this.daAuthen.SelectCommand = this.cmmd;
+        }
+
+        private bool Authenticate()
+        {
+            DataSet ds = new DataSet();
+            PRDatabaseManager.Instance().FillAuthen(ds, TxtUserName.Text, TxtPassword.Text);
+
+            return ds.Tables[0].Rows.Count > 0;
         }
     }
 }

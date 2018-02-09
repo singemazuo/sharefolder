@@ -63,9 +63,89 @@ namespace ProRacer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3xhumed_Mega_Games_Pack_04_Race_07_4 {
+            get {
+                object obj = ResourceManager.GetObject("3xhumed-Mega-Games-Pack-04-Race-07-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dapino_Summer_Holiday_Sun {
+            get {
+                object obj = ResourceManager.GetObject("Dapino-Summer-Holiday-Sun", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Designcontest_Ecommerce_Business_Money {
+            get {
+                object obj = ResourceManager.GetObject("Designcontest-Ecommerce-Business-Money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Button_Button_Help {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Button-Button-Help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hopstarter_Mac_Folders_Windows {
+            get {
+                object obj = ResourceManager.GetObject("Hopstarter-Mac-Folders-Windows", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icons_Land_Vista_People_Office_Customer_Male_Light {
+            get {
+                object obj = ResourceManager.GetObject("Icons-Land-Vista-People-Office-Customer-Male-Light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tatice_Operating_Systems_Windows_Media_Center {
+            get {
+                object obj = ResourceManager.GetObject("Tatice-Operating-Systems-Windows-Media-Center", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wow {
             get {
                 object obj = ResourceManager.GetObject("wow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wwalczyszyn_Ilive_Windows_Live_Mesh {
+            get {
+                object obj = ResourceManager.GetObject("Wwalczyszyn-Ilive-Windows-Live-Mesh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

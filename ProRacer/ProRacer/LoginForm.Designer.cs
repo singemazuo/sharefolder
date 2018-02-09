@@ -29,26 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtUserName = new System.Windows.Forms.TextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnOk = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
-            this.CbxPassword = new System.Windows.Forms.CheckBox();
+            this.cbxPassword = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(356, 241);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -103,22 +93,32 @@
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
-            // CbxPassword
+            // cbxPassword
             // 
-            this.CbxPassword.AutoSize = true;
-            this.CbxPassword.Location = new System.Drawing.Point(378, 153);
-            this.CbxPassword.Name = "CbxPassword";
-            this.CbxPassword.Size = new System.Drawing.Size(121, 17);
-            this.CbxPassword.TabIndex = 7;
-            this.CbxPassword.Text = "Remember paaword";
-            this.CbxPassword.UseVisualStyleBackColor = true;
+            this.cbxPassword.AutoSize = true;
+            this.cbxPassword.Location = new System.Drawing.Point(378, 153);
+            this.cbxPassword.Name = "cbxPassword";
+            this.cbxPassword.Size = new System.Drawing.Size(121, 17);
+            this.cbxPassword.TabIndex = 7;
+            this.cbxPassword.Text = "Remember paaword";
+            this.cbxPassword.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(356, 241);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 244);
-            this.Controls.Add(this.CbxPassword);
+            this.Controls.Add(this.cbxPassword);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.TxtPassword);
@@ -144,6 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnOk;
         private System.Windows.Forms.Button BtnCancel;
-        private System.Windows.Forms.CheckBox CbxPassword;
+        private System.Windows.Forms.CheckBox cbxPassword;
     }
 }

@@ -49,7 +49,6 @@ C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.e
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.exe
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\ProRacer.pdb
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\bin\Debug\MdiTabControl.dll
-C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Cash.resources
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.MainForm.resources
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Participant.resources
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.Race.resources
@@ -62,3 +61,4 @@ C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.c
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.exe
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.pdb
 C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.csprojResolveAssemblyReference.cache
+C:\Users\5028212\SparkleShare\sharefolder\ProRacer\ProRacer\obj\Debug\ProRacer.HelpForm.resources

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Participant));
             this.Panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -36,10 +37,9 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.chkMember = new System.Windows.Forms.CheckBox();
-            this.lstSearch = new System.Windows.Forms.ListBox();
             this.Frame3 = new System.Windows.Forms.GroupBox();
-            this.txtSponsor = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.cmbCountry = new System.Windows.Forms.ComboBox();
+            this.cmbSponsor = new System.Windows.Forms.ComboBox();
             this.txtRank = new System.Windows.Forms.TextBox();
             this.lblLabels_2 = new System.Windows.Forms.Label();
             this.lblLabels_4 = new System.Windows.Forms.Label();
@@ -49,9 +49,14 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblLabels_3 = new System.Windows.Forms.Label();
             this.lblLabels_1 = new System.Windows.Forms.Label();
-            this.Frame1 = new System.Windows.Forms.GroupBox();
-            this.Label1 = new System.Windows.Forms.Label();
             this.txtGender = new System.Windows.Forms.TextBox();
+            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdoOther = new System.Windows.Forms.RadioButton();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.cmbParticipants = new System.Windows.Forms.ComboBox();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnLast = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -61,7 +66,7 @@
             this.GroupBox1.SuspendLayout();
             this.Frame3.SuspendLayout();
             this.Frame2.SuspendLayout();
-            this.Frame1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.pnlNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,10 +81,10 @@
             this.Panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.Panel1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Panel1.Location = new System.Drawing.Point(52, 257);
+            this.Panel1.Location = new System.Drawing.Point(108, 328);
             this.Panel1.Name = "Panel1";
             this.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel1.Size = new System.Drawing.Size(204, 24);
+            this.Panel1.Size = new System.Drawing.Size(213, 24);
             this.Panel1.TabIndex = 43;
             this.Panel1.TabStop = true;
             // 
@@ -96,7 +101,6 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(BtnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -104,15 +108,13 @@
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnUpdate.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpdate.Location = new System.Drawing.Point(96, 0);
+            this.btnUpdate.Location = new System.Drawing.Point(100, 0);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnUpdate.Size = new System.Drawing.Size(49, 20);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(BtnUpdate_Click);
-
             // 
             // btnCancel
             // 
@@ -121,15 +123,13 @@
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancel.Location = new System.Drawing.Point(143, 0);
+            this.btnCancel.Location = new System.Drawing.Point(155, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnCancel.Size = new System.Drawing.Size(48, 20);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
-
-
             // 
             // btnDelete
             // 
@@ -144,13 +144,11 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(BtnDelete_Click);
-
             // 
             // GroupBox1
             // 
             this.GroupBox1.Controls.Add(this.chkMember);
-            this.GroupBox1.Location = new System.Drawing.Point(227, 202);
+            this.GroupBox1.Location = new System.Drawing.Point(270, 276);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(133, 33);
             this.GroupBox1.TabIndex = 40;
@@ -159,66 +157,52 @@
             // chkMember
             // 
             this.chkMember.AutoSize = true;
-            this.chkMember.Location = new System.Drawing.Point(8, 9);
+            this.chkMember.Location = new System.Drawing.Point(8, 10);
             this.chkMember.Name = "chkMember";
             this.chkMember.Size = new System.Drawing.Size(84, 17);
             this.chkMember.TabIndex = 0;
             this.chkMember.Text = "IAC Member";
             this.chkMember.UseVisualStyleBackColor = true;
             // 
-            // lstSearch
-            // 
-            this.lstSearch.Location = new System.Drawing.Point(284, 36);
-            this.lstSearch.Name = "lstSearch";
-            this.lstSearch.Size = new System.Drawing.Size(96, 95);
-            this.lstSearch.TabIndex = 42;
-            this.lstSearch.Visible = false;
-            // 
             // Frame3
             // 
             this.Frame3.BackColor = System.Drawing.SystemColors.Control;
-            this.Frame3.Controls.Add(this.txtSponsor);
-            this.Frame3.Controls.Add(this.txtCountry);
+            this.Frame3.Controls.Add(this.cmbCountry);
+            this.Frame3.Controls.Add(this.cmbSponsor);
             this.Frame3.Controls.Add(this.txtRank);
             this.Frame3.Controls.Add(this.lblLabels_2);
             this.Frame3.Controls.Add(this.lblLabels_4);
             this.Frame3.Controls.Add(this.lblLabels_0);
             this.Frame3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frame3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame3.Location = new System.Drawing.Point(-5, 136);
+            this.Frame3.Location = new System.Drawing.Point(38, 181);
             this.Frame3.Name = "Frame3";
             this.Frame3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Frame3.Size = new System.Drawing.Size(220, 99);
+            this.Frame3.Size = new System.Drawing.Size(220, 122);
             this.Frame3.TabIndex = 38;
             this.Frame3.TabStop = false;
             // 
-            // txtSponsor
+            // cmbCountry
             // 
-            this.txtSponsor.AcceptsReturn = true;
-            this.txtSponsor.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSponsor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSponsor.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSponsor.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSponsor.Location = new System.Drawing.Point(95, 66);
-            this.txtSponsor.MaxLength = 15;
-            this.txtSponsor.Name = "txtSponsor";
-            this.txtSponsor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSponsor.Size = new System.Drawing.Size(103, 20);
-            this.txtSponsor.TabIndex = 6;
+            this.cmbCountry.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbCountry.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cmbCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCountry.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCountry.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbCountry.Location = new System.Drawing.Point(84, 15);
+            this.cmbCountry.Name = "cmbCountry";
+            this.cmbCountry.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbCountry.Size = new System.Drawing.Size(130, 22);
+            this.cmbCountry.Sorted = true;
+            this.cmbCountry.TabIndex = 7;
             // 
-            // txtCountry
+            // cmbSponsor
             // 
-            this.txtCountry.AcceptsReturn = true;
-            this.txtCountry.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCountry.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCountry.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountry.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtCountry.Location = new System.Drawing.Point(99, 13);
-            this.txtCountry.MaxLength = 15;
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCountry.Size = new System.Drawing.Size(99, 20);
-            this.txtCountry.TabIndex = 5;
+            this.cmbSponsor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSponsor.Location = new System.Drawing.Point(60, 74);
+            this.cmbSponsor.Name = "cmbSponsor";
+            this.cmbSponsor.Size = new System.Drawing.Size(154, 22);
+            this.cmbSponsor.TabIndex = 6;
             // 
             // txtRank
             // 
@@ -227,7 +211,7 @@
             this.txtRank.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRank.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRank.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtRank.Location = new System.Drawing.Point(99, 39);
+            this.txtRank.Location = new System.Drawing.Point(84, 46);
             this.txtRank.MaxLength = 3;
             this.txtRank.Name = "txtRank";
             this.txtRank.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -240,7 +224,7 @@
             this.lblLabels_2.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_2.Location = new System.Drawing.Point(9, 66);
+            this.lblLabels_2.Location = new System.Drawing.Point(9, 79);
             this.lblLabels_2.Name = "lblLabels_2";
             this.lblLabels_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblLabels_2.Size = new System.Drawing.Size(76, 17);
@@ -253,7 +237,7 @@
             this.lblLabels_4.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_4.Location = new System.Drawing.Point(9, 39);
+            this.lblLabels_4.Location = new System.Drawing.Point(9, 49);
             this.lblLabels_4.Name = "lblLabels_4";
             this.lblLabels_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblLabels_4.Size = new System.Drawing.Size(76, 17);
@@ -266,7 +250,7 @@
             this.lblLabels_0.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLabels_0.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabels_0.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblLabels_0.Location = new System.Drawing.Point(8, 15);
+            this.lblLabels_0.Location = new System.Drawing.Point(9, 20);
             this.lblLabels_0.Name = "lblLabels_0";
             this.lblLabels_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblLabels_0.Size = new System.Drawing.Size(85, 17);
@@ -282,7 +266,7 @@
             this.Frame2.Controls.Add(this.lblLabels_1);
             this.Frame2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frame2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame2.Location = new System.Drawing.Point(28, 44);
+            this.Frame2.Location = new System.Drawing.Point(68, 81);
             this.Frame2.Name = "Frame2";
             this.Frame2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Frame2.Size = new System.Drawing.Size(253, 79);
@@ -343,111 +327,145 @@
             this.lblLabels_1.TabIndex = 0;
             this.lblLabels_1.Text = "First Name:";
             // 
-            // Frame1
-            // 
-            this.Frame1.BackColor = System.Drawing.SystemColors.Control;
-            this.Frame1.Controls.Add(this.Label1);
-            this.Frame1.Controls.Add(this.txtGender);
-            this.Frame1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Frame1.Location = new System.Drawing.Point(227, 136);
-            this.Frame1.Name = "Frame1";
-            this.Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Frame1.Size = new System.Drawing.Size(76, 59);
-            this.Frame1.TabIndex = 39;
-            this.Frame1.TabStop = false;
-            // 
-            // Label1
-            // 
-            this.Label1.BackColor = System.Drawing.SystemColors.Control;
-            this.Label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Label1.Location = new System.Drawing.Point(12, 15);
-            this.Label1.Name = "Label1";
-            this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label1.Size = new System.Drawing.Size(58, 17);
-            this.Label1.TabIndex = 37;
-            this.Label1.Text = "Gender:";
-            // 
             // txtGender
             // 
-            this.txtGender.Location = new System.Drawing.Point(15, 33);
+            this.txtGender.Location = new System.Drawing.Point(349, 222);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(28, 20);
-            this.txtGender.TabIndex = 36;
+            this.txtGender.TabIndex = 37;
+            this.txtGender.TextChanged += new System.EventHandler(this.txtGender_TextChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdoOther);
+            this.groupBox2.Controls.Add(this.rdoMale);
+            this.groupBox2.Controls.Add(this.rdoFemale);
+            this.groupBox2.Location = new System.Drawing.Point(270, 181);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(88, 96);
+            this.groupBox2.TabIndex = 44;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gender";
+            // 
+            // rdoOther
+            // 
+            this.rdoOther.AutoSize = true;
+            this.rdoOther.Location = new System.Drawing.Point(17, 69);
+            this.rdoOther.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoOther.Name = "rdoOther";
+            this.rdoOther.Size = new System.Drawing.Size(51, 17);
+            this.rdoOther.TabIndex = 41;
+            this.rdoOther.TabStop = true;
+            this.rdoOther.Text = "Other";
+            this.rdoOther.UseVisualStyleBackColor = true;
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Location = new System.Drawing.Point(17, 47);
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(48, 17);
+            this.rdoMale.TabIndex = 40;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Male";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.Location = new System.Drawing.Point(17, 25);
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdoFemale.TabIndex = 39;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "Female";
+            this.rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // cmbParticipants
+            // 
+            this.cmbParticipants.FormattingEnabled = true;
+            this.cmbParticipants.Location = new System.Drawing.Point(59, 27);
+            this.cmbParticipants.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbParticipants.Name = "cmbParticipants";
+            this.cmbParticipants.Size = new System.Drawing.Size(300, 21);
+            this.cmbParticipants.TabIndex = 45;
+            this.cmbParticipants.SelectedIndexChanged += new System.EventHandler(this.cmbParticipants_SelectedIndexChanged);
             // 
             // pnlNav
             // 
-            this.pnlNav.BackColor = System.Drawing.SystemColors.Control;
             this.pnlNav.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlNav.Controls.Add(this.btnLast);
             this.pnlNav.Controls.Add(this.btnNext);
             this.pnlNav.Controls.Add(this.btnPrevious);
             this.pnlNav.Controls.Add(this.btnFirst);
-            this.pnlNav.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlNav.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlNav.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlNav.Location = new System.Drawing.Point(110, 294);
+            this.pnlNav.Location = new System.Drawing.Point(164, 358);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlNav.Size = new System.Drawing.Size(90, 24);
-            this.pnlNav.TabIndex = 41;
-            this.pnlNav.TabStop = true;
+            this.pnlNav.Size = new System.Drawing.Size(84, 24);
+            this.pnlNav.TabIndex = 46;
             // 
             // btnLast
             // 
             this.btnLast.Image = ((System.Drawing.Image)(resources.GetObject("btnLast.Image")));
             this.btnLast.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLast.Location = new System.Drawing.Point(63, 0);
+            this.btnLast.Location = new System.Drawing.Point(60, 0);
             this.btnLast.Name = "btnLast";
             this.btnLast.Size = new System.Drawing.Size(20, 20);
-            this.btnLast.TabIndex = 8;
+            this.btnLast.TabIndex = 5;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
             this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
             this.btnNext.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNext.Location = new System.Drawing.Point(42, 0);
+            this.btnNext.Location = new System.Drawing.Point(40, 0);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(20, 20);
-            this.btnNext.TabIndex = 7;
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrevious
             // 
+            this.btnPrevious.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.Image = ((System.Drawing.Image)(resources.GetObject("btnPrevious.Image")));
             this.btnPrevious.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnPrevious.Location = new System.Drawing.Point(20, 0);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(20, 20);
-            this.btnPrevious.TabIndex = 6;
+            this.btnPrevious.TabIndex = 3;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnFirst
             // 
-            this.btnFirst.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFirst.Image = ((System.Drawing.Image)(resources.GetObject("btnFirst.Image")));
             this.btnFirst.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnFirst.Location = new System.Drawing.Point(0, 0);
             this.btnFirst.Name = "btnFirst";
             this.btnFirst.Size = new System.Drawing.Size(20, 20);
-            this.btnFirst.TabIndex = 5;
+            this.btnFirst.TabIndex = 2;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // Participant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 330);
+            this.ClientSize = new System.Drawing.Size(436, 397);
+            this.Controls.Add(this.pnlNav);
+            this.Controls.Add(this.cmbParticipants);
+            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.GroupBox1);
-            this.Controls.Add(this.lstSearch);
             this.Controls.Add(this.Frame3);
             this.Controls.Add(this.Frame2);
-            this.Controls.Add(this.Frame1);
-            this.Controls.Add(this.pnlNav);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Participant";
             this.Text = "Participant";
-            this.Load += new System.EventHandler(this.Participant_Load);
+            this.Load += new System.EventHandler(this.frmRacers_Load);
             this.Panel1.ResumeLayout(false);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
@@ -455,26 +473,23 @@
             this.Frame3.PerformLayout();
             this.Frame2.ResumeLayout(false);
             this.Frame2.PerformLayout();
-            this.Frame1.ResumeLayout(false);
-            this.Frame1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.pnlNav.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel Panel1;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.GroupBox GroupBox1;
         private System.Windows.Forms.CheckBox chkMember;
-        private System.Windows.Forms.ListBox lstSearch;
         private System.Windows.Forms.GroupBox Frame3;
-        private System.Windows.Forms.TextBox txtSponsor;
-        private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.TextBox txtRank;
         private System.Windows.Forms.Label lblLabels_2;
         private System.Windows.Forms.Label lblLabels_4;
@@ -484,9 +499,17 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lblLabels_3;
         private System.Windows.Forms.Label lblLabels_1;
-        private System.Windows.Forms.GroupBox Frame1;
-        private System.Windows.Forms.Label Label1;
-        private System.Windows.Forms.TextBox txtGender;
+        internal System.Windows.Forms.TextBox txtGender;
+        public System.Windows.Forms.ComboBox cmbCountry;
+        public System.Windows.Forms.ComboBox cmbSponsor;
+        public System.Windows.Forms.ToolTip ToolTip1;
+        internal System.Windows.Forms.Timer Timer1;
+        public System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdoOther;
+        private System.Windows.Forms.RadioButton rdoMale;
+        private System.Windows.Forms.RadioButton rdoFemale;
+        private System.Windows.Forms.ComboBox cmbParticipants;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button btnLast;
         private System.Windows.Forms.Button btnNext;

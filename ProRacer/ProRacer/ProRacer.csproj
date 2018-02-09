@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cash.cs">
+    <Compile Include="HelpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cash.designer.cs">
-      <DependentUpon>Cash.cs</DependentUpon>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <Compile Include="Sponsor.designer.cs">
       <DependentUpon>Sponsor.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cash.resx">
-      <DependentUpon>Cash.cs</DependentUpon>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -141,6 +141,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3xhumed-Mega-Games-Pack-04-Race-07-4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dapino-Summer-Holiday-Sun.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designcontest-Ecommerce-Business-Money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Button-Button-Help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Mac-Folders-Windows.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Land-Vista-People-Office-Customer-Male-Light.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tatice-Operating-Systems-Windows-Media-Center.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wwalczyszyn-Ilive-Windows-Live-Mesh.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
