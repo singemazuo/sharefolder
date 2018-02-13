@@ -42,8 +42,8 @@ namespace ProRacer
             txtRank.DataBindings.Add("Text",ds, "Participant.Rank");
 
             cmbSponsor.DataSource = ds;
-            cmbSponsor.DisplayMember = "PS.SponsorName";
-            cmbSponsor.ValueMember = "PS.SponsorId";
+            cmbSponsor.DisplayMember = "Sponsor.SponsorName";
+            cmbSponsor.ValueMember = "Sponsor.SponsorId";
 
             txtGender.DataBindings.Add("Text",ds, "PS.Gender");
 
