@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace ProRacer
 {
-    public interface IPRDataCommands
+    public interface IDataValidation
     {
-        
+        Boolean Validation(__arglist);
     }
 
     public class PRDatabaseManager
