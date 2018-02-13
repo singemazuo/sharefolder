@@ -217,6 +217,7 @@
             this.txtRank.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtRank.Size = new System.Drawing.Size(33, 20);
             this.txtRank.TabIndex = 1;
+            this.txtRank.Validating += new System.ComponentModel.CancelEventHandler(this.txtRank_Validating);
             // 
             // lblLabels_2
             // 

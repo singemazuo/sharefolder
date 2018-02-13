@@ -120,6 +120,11 @@ namespace ProRacer
             adjustStatusBar.AdjustPosition(cmbParticipants.SelectedIndex+1,cmbParticipants.Items.Count);
         }
 
+        private void txtRank_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
         //private bool Validation()
         //{
 
