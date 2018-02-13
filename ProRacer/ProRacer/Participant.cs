@@ -24,30 +24,28 @@ namespace ProRacer
             adjustStatusBar.AdjustLoadStatus(0);
 
             //PRDatabaseManager.Instance().FillParticipantWithSponsor(ds, "PS");
-            PRDatabaseManager.Instance().FillParticipant(ds);
-            PRDatabaseManager.Instance().FillSponsor(ds);
 
             cmbParticipants.DataSource = ds;
-            cmbParticipants.DisplayMember = "Participant.FullName";
-            cmbParticipants.ValueMember = "Participant.SponsorId";
-            cmbParticipants.DataBindings.Add("SelectedValue", ds.Tables["Sponsor"], "SponsorId");
+            cmbParticipants.DisplayMember = "PS.FullName";
+            cmbParticipants.ValueMember = "PS.PK_ParticipantId";
+            cmbParticipants.DataBindings.Add("SelectedValue", ds, "PS.FK_ParticipantId");
 
-            txtFirstName.DataBindings.Add("Text",ds, "Participant.FirstName");
+            txtFirstName.DataBindings.Add("Text",ds, "PS.FirstName");
 
-            txtLastName.DataBindings.Add("Text",ds, "Participant.LastName");
+            txtLastName.DataBindings.Add("Text",ds, "PS.LastName");
 
             cmbCountry.DataSource = ds;
-            cmbCountry.DisplayMember = "Participant.Country";
+            cmbCountry.DisplayMember = "PS.Country";
 
-            txtRank.DataBindings.Add("Text",ds, "Participant.Rank");
+            txtRank.DataBindings.Add("Text",ds, "PS.Rank");
 
-            cmbSponsor.DataSource = ds.Tables["Sponsor"];
-            cmbSponsor.DisplayMember = "SponsorName";
-            cmbSponsor.ValueMember = "SponsorId";
+            cmbSponsor.DataSource = ds;
+            cmbSponsor.DisplayMember = "PS.SponsorName";
+            cmbSponsor.ValueMember = "PS.SponsorId";
 
-            txtGender.DataBindings.Add("Text",ds, "Participant.Gender");
+            txtGender.DataBindings.Add("Text",ds, "PS.Gender");
 
-            chkMember.DataBindings.Add("Checked",ds, "Participant.IACMember");
+            chkMember.DataBindings.Add("Checked",ds, "PS.IACMember");
 
             adjustStatusBar.AdjustLoadStatus(1);
         }
