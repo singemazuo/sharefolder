@@ -37,17 +37,17 @@ namespace ProRacer
             cmbCountry.DataSource = ds;
             cmbCountry.DisplayMember = "PS.Country";
 
-            txtRank.DataBindings.Add("Text", ds, "PS.Rank");
+            txtRank.DataBindings.Add("Text", ds, "Participant.Rank");
 
             cmbSponsor.DataSource = ds;
-            cmbSponsor.DisplayMember = "PS.SponsorName";
-            cmbSponsor.ValueMember = "PS.SponsorId";
+            cmbSponsor.DisplayMember = "Sponsor.SponsorName";
+            cmbSponsor.ValueMember = "Sponsor.SponsorId";
             cmbParticipants.ValueMember = "Sponsor.SponsorId";
             cmbParticipants.DataBindings.Add("SelectedValue", ds, "Participant.SponsorId");
 
-            txtGender.DataBindings.Add("Text", ds, "PS.Gender");
+            txtGender.DataBindings.Add("Text", ds, "Participant.Gender");
 
-            chkMember.DataBindings.Add("Checked", ds, "PS.IACMember");
+            chkMember.DataBindings.Add("Checked", ds, "Participant.IACMember");
 
             //cmbParticipants.DataSource = ds;
             //cmbParticipants.DisplayMember = "PS.FullName";
