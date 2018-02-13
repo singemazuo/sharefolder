@@ -97,7 +97,7 @@ namespace ProRacer
             adjustStatusBar.AdjustPosition(cmbParticipants.SelectedIndex+1,cmbParticipants.Items.Count);
         }
 
-        public bool Validation()
+        public Boolean Validation(__arglist)
         {
             
         }
