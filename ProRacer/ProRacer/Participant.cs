@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ProRacer
 {
-    public partial class Participant : Form
+    public partial class Participant : Form, IDataValidation
     {
 
         private DataSet ds = new DataSet();
