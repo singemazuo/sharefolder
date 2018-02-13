@@ -43,7 +43,7 @@ namespace ProRacer
 
             cmbSponsor.DataSource = ds.Tables["Sponsor"];
             cmbSponsor.DisplayMember = "SponsorName";
-            cmbSponsor.ValueMember = "Sponsor.SponsorId";
+            cmbSponsor.ValueMember = "SponsorId";
 
             txtGender.DataBindings.Add("Text",ds, "Participant.Gender");
 
