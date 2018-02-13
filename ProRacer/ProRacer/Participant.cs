@@ -29,7 +29,7 @@ namespace ProRacer
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "Participant.FullName";
-            cmbParticipants.ValueMember = "Participant.ParticipantId";
+            cmbParticipants.ValueMember = "Participant.SponsorId";
             cmbParticipants.DataBindings.Add("SelectedValue", ds, "Sponsor.ParticipantId");
 
             txtFirstName.DataBindings.Add("Text",ds, "Participant.FirstName");
