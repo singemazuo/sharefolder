@@ -16,7 +16,7 @@ namespace ProRacer
         void AdjustLoadStatus(int status);
     }
 
-    public interface IDataVerfiction
+    public interface IDataValidation
     {
 
     }
