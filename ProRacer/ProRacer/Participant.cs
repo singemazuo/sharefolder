@@ -27,27 +27,49 @@ namespace ProRacer
             PRDatabaseManager.Instance().FillSponsor(ds);
             PRDatabaseManager.Instance().FillParticipant(ds);
 
+            cmbParticipants.DataSource = ds;
+            cmbParticipants.DisplayMember = "PS.FullName";
+            cmbParticipants.ValueMember = "PS.SponsorId";
+            cmbParticipants.DataBindings.Add("SelectedValue", ds, "PS.SponsorId");
+
+            txtFirstName.DataBindings.Add("Text", ds, "PS.FirstName");
+
+            txtLastName.DataBindings.Add("Text", ds, "PS.LastName");
+
+            cmbCountry.DataSource = ds;
+            cmbCountry.DisplayMember = "PS.Country";
+
+            txtRank.DataBindings.Add("Text", ds, "PS.Rank");
+
+            cmbSponsor.DataSource = ds;
+            cmbSponsor.DisplayMember = "PS.SponsorName";
+            cmbSponsor.ValueMember = "PS.SponsorId";
+
+            txtGender.DataBindings.Add("Text", ds, "PS.Gender");
+
+            chkMember.DataBindings.Add("Checked", ds, "PS.IACMember");
+
             //cmbParticipants.DataSource = ds;
             //cmbParticipants.DisplayMember = "PS.FullName";
             //cmbParticipants.ValueMember = "PS.SponsorId";
             //cmbParticipants.DataBindings.Add("SelectedValue", ds, "PS.SponsorId");
 
-            //txtFirstName.DataBindings.Add("Text",ds, "PS.FirstName");
+            //txtFirstName.DataBindings.Add("Text", ds, "PS.FirstName");
 
-            //txtLastName.DataBindings.Add("Text",ds, "PS.LastName");
+            //txtLastName.DataBindings.Add("Text", ds, "PS.LastName");
 
             //cmbCountry.DataSource = ds;
             //cmbCountry.DisplayMember = "PS.Country";
 
-            //txtRank.DataBindings.Add("Text",ds, "PS.Rank");
+            //txtRank.DataBindings.Add("Text", ds, "PS.Rank");
 
             //cmbSponsor.DataSource = ds;
             //cmbSponsor.DisplayMember = "PS.SponsorName";
             //cmbSponsor.ValueMember = "PS.SponsorId";
 
-            //txtGender.DataBindings.Add("Text",ds, "PS.Gender");
+            //txtGender.DataBindings.Add("Text", ds, "PS.Gender");
 
-            //chkMember.DataBindings.Add("Checked",ds, "PS.IACMember");
+            //chkMember.DataBindings.Add("Checked", ds, "PS.IACMember");
 
             adjustStatusBar.AdjustLoadStatus(1);
         }
