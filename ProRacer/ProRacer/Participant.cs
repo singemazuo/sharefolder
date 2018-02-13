@@ -99,7 +99,7 @@ namespace ProRacer
 
         public Boolean Validation(__arglist)
         {
-            
+            return true;
         }
     }
 }
