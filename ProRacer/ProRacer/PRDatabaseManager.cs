@@ -62,11 +62,6 @@ namespace ProRacer
             SqlCommand cmmd = new SqlCommand("SELECT *, FirstName + ',' + LastName AS [FullName] FROM Participant LEFT JOIN Sponsor ON Participant.SponsorId = Sponsor.SponsorId ORDER BY FirstName, LastName", conn);
             SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
             adapter.Fill(ds, name);
-
-            if (iDataValidation != null)
-            {
-                iDataValidation.Validation(__arglist(ds));
-            }
         }
 
         private PRDatabaseManager()
