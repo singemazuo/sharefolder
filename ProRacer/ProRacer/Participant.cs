@@ -39,7 +39,7 @@ namespace ProRacer
             cmbCountry.DataSource = ds;
             cmbCountry.DisplayMember = "Participant.Country";
 
-            txtRank.DataBindings.Add("Text",ds, "PS.Rank");
+            txtRank.DataBindings.Add("Text",ds, "Participant.Rank");
 
             cmbSponsor.DataSource = ds;
             cmbSponsor.DisplayMember = "PS.SponsorName";
