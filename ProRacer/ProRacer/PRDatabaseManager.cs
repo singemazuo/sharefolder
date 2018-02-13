@@ -64,7 +64,7 @@ namespace ProRacer
             adapter.Fill(ds, name);
         }
 
-        public void FillSponsorWithParticipant()
+        public void FillSponsorWithParticipant(DataSet ds,string name = "")
         {
 
         }
