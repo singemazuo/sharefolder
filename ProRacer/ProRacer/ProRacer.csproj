@@ -67,6 +67,11 @@
     <Compile Include="Participant.designer.cs">
       <DependentUpon>Participant.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProRacerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProRacerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Race.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +145,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ProRacerDataSet.xsc">
+      <DependentUpon>ProRacerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProRacerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProRacerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProRacerDataSet.xss">
+      <DependentUpon>ProRacerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\wow.jpg" />
   </ItemGroup>
   <ItemGroup>
