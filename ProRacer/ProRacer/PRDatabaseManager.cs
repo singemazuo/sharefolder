@@ -66,7 +66,9 @@ namespace ProRacer
 
         public void FillSponsorWithParticipant(DataSet ds,string name = "SponsorWithParticipant")
         {
-
+            SqlCommand cmmd = new SqlCommand("SELECT *,Sponsor.SponsorId AS FK_ParticipantId,Participant.ParticipantId AS PK_ParticipantId, FirstName + ',' + LastName AS [FullName] FROM Participant LEFT JOIN Sponsor ON Participant.SponsorId = Sponsor.SponsorId ORDER BY FirstName, LastName", conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmmd);
+            adapter.Fill(ds, name);
         }
 
         private PRDatabaseManager()
