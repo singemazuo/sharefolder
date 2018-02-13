@@ -68,6 +68,8 @@ namespace ProRacer
         {
             //conn = new SqlConnection(Properties.Settings.Default.SqlServerHost);
             conn = new SqlConnection("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com,1433;Initial Catalog=ProRacer;User ID=singemazuo;Password=z28397562");
+
+            iDataValidation = 
         }
 
         public static PRDatabaseManager Instance()
