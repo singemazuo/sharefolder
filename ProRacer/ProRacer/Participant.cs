@@ -45,7 +45,7 @@ namespace ProRacer
 
             txtGender.DataBindings.Add("Text",ds, "PS.Gender");
 
-            chkMember.DataBindings.Add("Checked",ds,"ps.IACMember");
+            chkMember.DataBindings.Add("Checked",ds, "PS.IACMember");
 
             adjustStatusBar.AdjustLoadStatus(1);
         }
