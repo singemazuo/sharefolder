@@ -28,14 +28,14 @@ namespace ProRacer
             PRDatabaseManager.Instance().FillParticipant(ds);
 
             cmbParticipants.DataSource = ds;
-            cmbParticipants.DisplayMember = "PS.FullName";
+            cmbParticipants.DisplayMember = "Participant.FullName";
 
-            txtFirstName.DataBindings.Add("Text", ds, "PS.FirstName");
+            txtFirstName.DataBindings.Add("Text", ds, "Participant.FirstName");
 
-            txtLastName.DataBindings.Add("Text", ds, "PS.LastName");
+            txtLastName.DataBindings.Add("Text", ds, "Participant.LastName");
 
             cmbCountry.DataSource = ds;
-            cmbCountry.DisplayMember = "PS.Country";
+            cmbCountry.DisplayMember = "Participant.Country";
 
             txtRank.DataBindings.Add("Text", ds, "Participant.Rank");
 
