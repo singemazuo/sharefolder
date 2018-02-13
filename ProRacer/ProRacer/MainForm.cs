@@ -16,11 +16,6 @@ namespace ProRacer
         void AdjustLoadStatus(int status);
     }
 
-    public interface IDataValidation
-    {
-        Boolean Validation(__arglist);
-    }
-
     public partial class MainForm : Form, IAdjustStatusBar
     {
         public MainForm()
