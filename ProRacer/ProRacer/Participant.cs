@@ -25,6 +25,7 @@ namespace ProRacer
 
             //PRDatabaseManager.Instance().FillSponsorWithParticipant(ds, "PS");
             PRDatabaseManager.Instance().FillSponsor(ds);
+            PRDatabaseManager.Instance().FillParticipant(ds);
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "PS.FullName";
