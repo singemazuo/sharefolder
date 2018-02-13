@@ -128,7 +128,7 @@ namespace ProRacer
             }
             else
             {
-                ErrorProvider
+                errorProvider1.SetError();
             }
         }
 
