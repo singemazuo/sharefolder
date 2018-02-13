@@ -16,6 +16,11 @@ namespace ProRacer
         void AdjustLoadStatus(int status);
     }
 
+    public interface IDataVerfiction
+    {
+
+    }
+
     public partial class MainForm : Form, IAdjustStatusBar
     {
         public MainForm()
