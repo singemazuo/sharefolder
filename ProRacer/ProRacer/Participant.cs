@@ -99,7 +99,7 @@ namespace ProRacer
 
         public bool Validation()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
