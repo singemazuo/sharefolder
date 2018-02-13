@@ -101,10 +101,5 @@ namespace ProRacer
         {
             throw new NotImplementedException();
         }
-
-        bool IDataValidation.Validation()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
