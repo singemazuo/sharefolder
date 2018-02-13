@@ -15,6 +15,8 @@ namespace ProRacer
         private static PRDatabaseManager _instance = null;
         private SqlConnection conn;
 
+        private IDataValidation iDataValidation;
+
         public void FillRace(DataSet ds)
         {
             SqlCommand cmmd = new SqlCommand("SELECT * FROM Race", conn);
