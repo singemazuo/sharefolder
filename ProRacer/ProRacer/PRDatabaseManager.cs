@@ -15,7 +15,7 @@ namespace ProRacer
         private static PRDatabaseManager _instance = null;
         private SqlConnection conn;
 
-        private IDataValidation iDataValidation;
+        private IDataValidation iDataValidation = null;
 
         public void FillRace(DataSet ds)
         {
