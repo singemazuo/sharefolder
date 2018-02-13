@@ -71,5 +71,16 @@ namespace ProRacer.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sqlserver.cv4bnwlhigjt.ca-central-1.rds.amazonaws.com;Initial Catalog" +
+            "=ProRacer;Persist Security Info=True;User ID=singemazuo")]
+        public string ProRacerConnection {
+            get {
+                return ((string)(this["ProRacerConnection"]));
+            }
+        }
     }
 }
