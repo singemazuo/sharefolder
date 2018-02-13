@@ -23,11 +23,11 @@ namespace ProRacer
         {
             adjustStatusBar.AdjustLoadStatus(0);
 
-            //PRDatabaseManager.Instance().FillParticipantWithSponsor(ds, "PS");
+            PRDatabaseManager.Instance().FillParticipantWithSponsor(ds, "PS");
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "PS.FullName";
-            cmbParticipants.ValueMember = "PS.PK_ParticipantId";
+            cmbParticipants.ValueMember = "PS.ParticipantId";
             cmbParticipants.DataBindings.Add("SelectedValue", ds, "PS.FK_ParticipantId");
 
             txtFirstName.DataBindings.Add("Text",ds, "PS.FirstName");
