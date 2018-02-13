@@ -65,7 +65,7 @@ namespace ProRacer
 
             if (iDataValidation != null)
             {
-                iDataValidation.Validation(ds);
+                iDataValidation.Validation(__arglist(ds));
             }
         }
 
