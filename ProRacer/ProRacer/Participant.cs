@@ -29,8 +29,8 @@ namespace ProRacer
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "Participant.FullName";
-            cmbParticipants.ValueMember = "PS.PK_ParticipantId";
-            cmbParticipants.DataBindings.Add("SelectedValue", ds, "PS.FK_ParticipantId");
+            cmbParticipants.ValueMember = "Participant.PK_ParticipantId";
+            cmbParticipants.DataBindings.Add("SelectedValue", ds, "Participant.FK_ParticipantId");
 
             txtFirstName.DataBindings.Add("Text",ds, "PS.FirstName");
 
