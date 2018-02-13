@@ -18,7 +18,7 @@ namespace ProRacer
 
     public interface IDataValidation
     {
-        Boolean Validation(object obj,...);
+        Boolean Validation(__arglist);
     }
 
     public partial class MainForm : Form, IAdjustStatusBar
