@@ -122,7 +122,14 @@ namespace ProRacer
 
         private void txtRank_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            if (validation())
+            {
 
+            }
+            else
+            {
+
+            }
         }
 
         private bool validation()
