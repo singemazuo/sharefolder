@@ -23,7 +23,7 @@ namespace ProRacer
         {
             adjustStatusBar.AdjustLoadStatus(0);
 
-            PRDatabaseManager.Instance().FillParticipantWithSponsor(ds, "ps");
+            PRDatabaseManager.Instance().FillParticipantWithSponsor(ds, "PS");
 
             cmbParticipants.DataSource = ds;
             cmbParticipants.DisplayMember = "ps.FullName";
