@@ -64,6 +64,11 @@ namespace ProRacer
             adapter.Fill(ds, name);
         }
 
+        public void FillSponsorWithParticipant()
+        {
+
+        }
+
         private PRDatabaseManager()
         {
             //conn = new SqlConnection(Properties.Settings.Default.SqlServerHost);
