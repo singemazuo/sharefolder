@@ -1,0 +1,30 @@
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csprojResolveAssemblyReference.cache
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Form1.resources
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Properties.Resources.resources
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.GenerateResource.Cache
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.CoreCompileInputs.cache
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe.config
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.pdb
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.exe
+E:/Intro to Programming Projects/WindowsFormsApp22/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.pdb
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csprojResolveAssemblyReference.cache
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Form1.resources
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Properties.Resources.resources
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.GenerateResource.Cache
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.CoreCompileInputs.cache
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.exe
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.pdb
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe.config
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe
+E:/Google Drive/Term 2/DB Prog C#/Practicals/Test 2 Options  - CUD/C# Send to Camp/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.pdb
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe.config
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.exe
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/bin/Debug/WindowsFormsApp22.pdb
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csprojResolveAssemblyReference.cache
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Form1.resources
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.Properties.Resources.resources
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.GenerateResource.Cache
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.csproj.CoreCompileInputs.cache
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.exe
+/Users/singemazuo/Downloads/Post/WindowsFormsApp22/obj/Debug/WindowsFormsApp22.pdb
